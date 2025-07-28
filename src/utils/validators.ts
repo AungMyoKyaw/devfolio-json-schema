@@ -1,5 +1,5 @@
-import { ZodError } from 'zod';
-import DevFolioSchema, { type DevFolio } from '../schema';
+import { ZodError } from "zod";
+import DevFolioSchema, { type DevFolio } from "../schema";
 
 /**
  * Validation result interface
@@ -20,21 +20,21 @@ export function validateDevFolio(data: unknown): ValidationResult {
     const validatedData = DevFolioSchema.parse(data);
     return {
       success: true,
-      data: validatedData,
+      data: validatedData
     };
   } catch (error) {
     if (error instanceof ZodError) {
       const errors = error.errors.map(
-        (err) => `${err.path.join('.')}: ${err.message}`
+        (err) => `${err.path.join(".")}: ${err.message}`
       );
       return {
         success: false,
-        errors,
+        errors
       };
     }
     return {
       success: false,
-      errors: ['Unknown validation error'],
+      errors: ["Unknown validation error"]
     };
   }
 }
@@ -46,19 +46,19 @@ export function validateDevFolio(data: unknown): ValidationResult {
  */
 export function safeValidateDevFolio(data: unknown): ValidationResult {
   const result = DevFolioSchema.safeParse(data);
-  
+
   if (result.success) {
     return {
       success: true,
-      data: result.data,
+      data: result.data
     };
   } else {
     const errors = result.error.errors.map(
-      (err) => `${err.path.join('.')}: ${err.message}`
+      (err) => `${err.path.join(".")}: ${err.message}`
     );
     return {
       success: false,
-      errors,
+      errors
     };
   }
 }
@@ -69,7 +69,7 @@ export function safeValidateDevFolio(data: unknown): ValidationResult {
  * @returns Formatted error string
  */
 export function formatValidationErrors(errors: string[]): string {
-  return errors.map((error, index) => `${index + 1}. ${error}`).join('\n');
+  return errors.map((error, index) => `${index + 1}. ${error}`).join("\n");
 }
 
 /**
@@ -88,9 +88,9 @@ export function isValidDevFolio(data: unknown): data is DevFolio {
  */
 export function createMinimalDevFolio(name: string): DevFolio {
   return {
-    $schema: 'https://github.com/AungMyoKyaw/devfolio-json-schema/v1.0.0',
+    $schema: "https://github.com/AungMyoKyaw/devfolio-json-schema/v1.0.0",
     basics: {
-      name,
-    },
+      name
+    }
   };
 }

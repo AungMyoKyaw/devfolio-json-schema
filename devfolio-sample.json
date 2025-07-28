@@ -6,7 +6,7 @@
     "image": "https://avatars.githubusercontent.com/u/example",
     "email": "aung@example.com",
     "phone": "+1-555-0123",
-    "url": "https://aungmyokyaw.dev",
+    "url": "https://aungmyokyaw.com",
     "summary": "Passionate full-stack developer with 8+ years of experience building scalable web applications and cloud-native solutions. Expertise in TypeScript, React, Node.js, and AWS. Strong advocate for clean code, test-driven development, and continuous learning.",
     "location": {
       "address": "123 Tech Street",
@@ -115,12 +115,7 @@
       "repository": "https://github.com/aungmyokyaw/devfolio-json-schema",
       "type": "open-source",
       "status": "completed",
-      "technologies": [
-        "TypeScript",
-        "Zod",
-        "Node.js",
-        "JSON Schema"
-      ],
+      "technologies": ["TypeScript", "Zod", "Node.js", "JSON Schema"],
       "role": "Lead Developer & Architect"
     },
     {
@@ -174,10 +169,7 @@
         "Machine Learning",
         "Web Development"
       ],
-      "honors": [
-        "Dean's List",
-        "Computer Science Department Award"
-      ],
+      "honors": ["Dean's List", "Computer Science Department Award"],
       "activities": [
         "ACM Student Chapter President",
         "Programming Contest Team"
@@ -199,23 +191,13 @@
           "title": "AWS Cloud Technical Essentials",
           "certificateLink": "https://coursera.org/verify/certificate/DEF456",
           "completionDate": "2023-02-15",
-          "skills": [
-            "AWS EC2",
-            "AWS S3",
-            "AWS IAM",
-            "Cloud Architecture"
-          ]
+          "skills": ["AWS EC2", "AWS S3", "AWS IAM", "Cloud Architecture"]
         },
         {
           "title": "Architecting Solutions on AWS",
           "certificateLink": "https://coursera.org/verify/certificate/GHI789",
           "completionDate": "2023-03-20",
-          "skills": [
-            "AWS VPC",
-            "Load Balancing",
-            "Auto Scaling",
-            "Monitoring"
-          ]
+          "skills": ["AWS VPC", "Load Balancing", "Auto Scaling", "Monitoring"]
         }
       ],
       "skills": [
@@ -225,9 +207,7 @@
         "DevOps"
       ],
       "duration": 120,
-      "instructors": [
-        "AWS Training Team"
-      ]
+      "instructors": ["AWS Training Team"]
     },
     {
       "courseTitle": "Meta Back-End Developer Professional Certificate",
@@ -250,12 +230,7 @@
           "certificateLink": "https://coursera.org/verify/certificate/STU901"
         }
       ],
-      "skills": [
-        "Python",
-        "Django",
-        "REST APIs",
-        "Database Design"
-      ],
+      "skills": ["Python", "Django", "REST APIs", "Database Design"],
       "duration": 240
     }
   ],
@@ -299,12 +274,7 @@
       "level": "expert",
       "category": "programming-languages",
       "yearsOfExperience": 5,
-      "keywords": [
-        "JavaScript",
-        "Static Typing",
-        "ES6+",
-        "Node.js"
-      ],
+      "keywords": ["JavaScript", "Static Typing", "ES6+", "Node.js"],
       "lastUsed": "2024-07-28",
       "rating": 9
     },
@@ -313,16 +283,9 @@
       "level": "expert",
       "category": "frameworks",
       "yearsOfExperience": 6,
-      "keywords": [
-        "Hooks",
-        "Redux",
-        "Context API",
-        "Next.js"
-      ],
+      "keywords": ["Hooks", "Redux", "Context API", "Next.js"],
       "lastUsed": "2024-07-28",
-      "certifications": [
-        "Meta React Developer Certificate"
-      ],
+      "certifications": ["Meta React Developer Certificate"],
       "rating": 9
     },
     {
@@ -330,17 +293,9 @@
       "level": "advanced",
       "category": "cloud",
       "yearsOfExperience": 4,
-      "keywords": [
-        "EC2",
-        "S3",
-        "Lambda",
-        "RDS",
-        "CloudFormation"
-      ],
+      "keywords": ["EC2", "S3", "Lambda", "RDS", "CloudFormation"],
       "lastUsed": "2024-07-25",
-      "certifications": [
-        "AWS Solutions Architect Professional"
-      ],
+      "certifications": ["AWS Solutions Architect Professional"],
       "rating": 8
     },
     {
@@ -348,12 +303,7 @@
       "level": "expert",
       "category": "platforms",
       "yearsOfExperience": 7,
-      "keywords": [
-        "Express.js",
-        "Fastify",
-        "Microservices",
-        "REST APIs"
-      ],
+      "keywords": ["Express.js", "Fastify", "Microservices", "REST APIs"],
       "lastUsed": "2024-07-28",
       "rating": 9
     },
@@ -362,12 +312,7 @@
       "level": "advanced",
       "category": "soft-skills",
       "yearsOfExperience": 3,
-      "keywords": [
-        "Team Management",
-        "Mentoring",
-        "Project Planning",
-        "Agile"
-      ],
+      "keywords": ["Team Management", "Mentoring", "Project Planning", "Agile"],
       "rating": 8
     }
   ],
@@ -411,34 +356,21 @@
   "interests": [
     {
       "name": "Open Source Development",
-      "keywords": [
-        "GitHub",
-        "Community",
-        "Collaboration",
-        "TypeScript"
-      ],
+      "keywords": ["GitHub", "Community", "Collaboration", "TypeScript"],
       "category": "technology",
       "level": "passionate",
       "description": "Active contributor to open-source projects, particularly in the TypeScript and React ecosystems"
     },
     {
       "name": "Photography",
-      "keywords": [
-        "Landscape",
-        "Street Photography",
-        "Adobe Lightroom"
-      ],
+      "keywords": ["Landscape", "Street Photography", "Adobe Lightroom"],
       "category": "arts",
       "level": "hobby",
       "description": "Amateur photographer with focus on urban landscapes and street photography"
     },
     {
       "name": "Hiking",
-      "keywords": [
-        "Nature",
-        "Outdoor Activities",
-        "National Parks"
-      ],
+      "keywords": ["Nature", "Outdoor Activities", "National Parks"],
       "category": "sports",
       "level": "passionate"
     }
@@ -499,11 +431,7 @@
       "description": "Exploring modern development practices using TypeScript across the full stack",
       "audienceSize": 300,
       "type": "conference-talk",
-      "topics": [
-        "TypeScript",
-        "Full-Stack Development",
-        "Best Practices"
-      ]
+      "topics": ["TypeScript", "Full-Stack Development", "Best Practices"]
     }
   ],
   "volunteer": [
@@ -541,8 +469,8 @@
     "theme": "modern-dark",
     "visibility": "public",
     "custom": {
-      "portfolio_url": "https://aungmyokyaw.dev",
-      "resume_pdf": "https://aungmyokyaw.dev/resume.pdf",
+      "portfolio_url": "https://aungmyokyaw.com",
+      "resume_pdf": "https://aungmyokyaw.com/resume.pdf",
       "preferred_contact": "email"
     }
   }

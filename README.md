@@ -26,16 +26,20 @@ pnpm add devfolio-json-schema
 ### Basic Usage
 
 ```typescript
-import { DevFolioSchema, DevFolio, validateDevFolio } from 'devfolio-json-schema';
+import {
+  DevFolioSchema,
+  DevFolio,
+  validateDevFolio
+} from "devfolio-json-schema";
 
 // Your portfolio data
 const portfolioData = {
   basics: {
     name: "John Doe",
     label: "Full-Stack Developer",
-    email: "john@example.com",
+    email: "john@example.com"
     // ... more fields
-  },
+  }
   // ... other sections
 };
 
@@ -43,18 +47,18 @@ const portfolioData = {
 const result = validateDevFolio(portfolioData);
 
 if (result.success) {
-  console.log('✅ Valid portfolio data!');
+  console.log("✅ Valid portfolio data!");
   // Use the validated data with full TypeScript support
   const portfolio: DevFolio = result.data;
 } else {
-  console.log('❌ Validation errors:', result.errors);
+  console.log("❌ Validation errors:", result.errors);
 }
 ```
 
 ### Safe Validation (No Exceptions)
 
 ```typescript
-import { safeValidateDevFolio } from 'devfolio-json-schema';
+import { safeValidateDevFolio } from "devfolio-json-schema";
 
 const result = safeValidateDevFolio(portfolioData);
 // Always returns { success: boolean, data?: DevFolio, errors?: string[] }
@@ -63,7 +67,7 @@ const result = safeValidateDevFolio(portfolioData);
 ### Type Checking
 
 ```typescript
-import { isValidDevFolio, DevFolio } from 'devfolio-json-schema';
+import { isValidDevFolio, DevFolio } from "devfolio-json-schema";
 
 if (isValidDevFolio(data)) {
   // TypeScript now knows 'data' is of type DevFolio
@@ -74,7 +78,7 @@ if (isValidDevFolio(data)) {
 ### Creating a Minimal Portfolio
 
 ```typescript
-import { createMinimalDevFolio } from 'devfolio-json-schema';
+import { createMinimalDevFolio } from "devfolio-json-schema";
 
 const minimal = createMinimalDevFolio("Jane Doe");
 // Returns a valid minimal DevFolio object
@@ -85,6 +89,7 @@ const minimal = createMinimalDevFolio("Jane Doe");
 The DevFolio schema includes the following sections:
 
 ### Core Sections
+
 - **basics**: Personal information, contact details, location, social profiles
 - **work**: Professional work experience with detailed descriptions
 - **projects**: Personal, professional, and open-source projects
@@ -92,6 +97,7 @@ The DevFolio schema includes the following sections:
 - **skills**: Technical and soft skills with proficiency levels
 
 ### Enhanced Sections
+
 - **moocs**: Online courses and specializations (Coursera, edX, etc.)
 - **certifications**: Professional certifications with expiry dates
 - **awards**: Recognition and awards received
@@ -100,6 +106,7 @@ The DevFolio schema includes the following sections:
 - **interests**: Personal interests and hobbies
 
 ### Advanced Sections
+
 - **volunteer**: Volunteer experience and community involvement
 - **publications**: Articles, papers, and technical writings
 - **speaking**: Conference talks and presentations
@@ -108,12 +115,15 @@ The DevFolio schema includes the following sections:
 - **references**: Professional references and testimonials
 
 ### Metadata
+
 - **meta**: Portfolio metadata, versioning, and custom fields
 
 ## 🎯 Key Features
 
 ### 1. MOOC Integration
+
 Based on real-world MOOC data structure, supporting:
+
 - Course bundles and specializations
 - Individual course certificates
 - Progress tracking (Completed, In Progress)
@@ -141,6 +151,7 @@ Based on real-world MOOC data structure, supporting:
 ```
 
 ### 2. Advanced Skills Management
+
 - Categorized skills (programming languages, frameworks, tools, etc.)
 - Proficiency levels (beginner to master)
 - Years of experience tracking
@@ -163,6 +174,7 @@ Based on real-world MOOC data structure, supporting:
 ```
 
 ### 3. Comprehensive Project Details
+
 - Project types (personal, professional, open-source)
 - Status tracking
 - Technology stacks
@@ -170,6 +182,7 @@ Based on real-world MOOC data structure, supporting:
 - Multiple URL types (demo, repository, documentation)
 
 ### 4. Professional Certifications
+
 - Expiry date tracking
 - Digital badge URLs
 - Skill associations
@@ -178,9 +191,11 @@ Based on real-world MOOC data structure, supporting:
 ## 📖 Examples
 
 ### Complete Example
+
 See `devfolio-sample.json` for a comprehensive example showcasing all schema features.
 
 ### Minimal Example
+
 ```json
 {
   "$schema": "https://github.com/AungMyoKyaw/devfolio-json-schema/v1.0.0",
@@ -193,6 +208,7 @@ See `devfolio-sample.json` for a comprehensive example showcasing all schema fea
 ## 🔍 Validation Features
 
 ### Built-in Validations
+
 - Email format validation
 - URL format validation
 - Date format validation (YYYY-MM-DD)
@@ -201,6 +217,7 @@ See `devfolio-sample.json` for a comprehensive example showcasing all schema fea
 - String length limits
 
 ### Custom Validation Rules
+
 - Certificate expiry date logic
 - Skill level progression
 - Date range validation
@@ -209,16 +226,19 @@ See `devfolio-sample.json` for a comprehensive example showcasing all schema fea
 ## 🛠 Development
 
 ### Building the Project
+
 ```bash
 npm run build
 ```
 
 ### Running Tests
+
 ```bash
 npm test
 ```
 
 ### Validating Sample Data
+
 ```bash
 npm run validate
 ```
@@ -228,6 +248,7 @@ npm run validate
 Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
 
 ### Development Setup
+
 1. Clone the repository
 2. Install dependencies: `npm install`
 3. Build the project: `npm run build`
