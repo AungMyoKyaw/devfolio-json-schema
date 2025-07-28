@@ -1,0 +1,19 @@
+{
+  "name": "devfolio-json-schema",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AungMyoKyaw/devfolio-json-schema.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AungMyoKyaw/devfolio-json-schema/issues"
+  },
+  "homepage": "https://github.com/AungMyoKyaw/devfolio-json-schema#readme"
+}
