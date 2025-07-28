@@ -1,0 +1,440 @@
+import type { DevFolio } from '../schema';
+
+/**
+ * Comprehensive sample DevFolio data demonstrating all schema features
+ */
+export const sampleDevFolio: DevFolio = {
+  "$schema": "https://github.com/AungMyoKyaw/devfolio-json-schema/v1.0.0",
+  
+  "basics": {
+    "name": "Aung Myo Kyaw",
+    "label": "Senior Full-Stack Developer & Cloud Architect",
+    "image": "https://avatars.githubusercontent.com/u/example",
+    "email": "aung@example.com",
+    "phone": "+1-555-0123",
+    "url": "https://aungmyokyaw.dev",
+    "summary": "Passionate full-stack developer with 8+ years of experience building scalable web applications and cloud-native solutions. Expertise in TypeScript, React, Node.js, and AWS. Strong advocate for clean code, test-driven development, and continuous learning.",
+    "location": {
+      "address": "123 Tech Street",
+      "postalCode": "94102",
+      "city": "San Francisco",
+      "countryCode": "US",
+      "region": "California"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "aungmyokyaw",
+        "url": "https://github.com/aungmyokyaw"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "aungmyokyaw",
+        "url": "https://linkedin.com/in/aungmyokyaw"
+      },
+      {
+        "network": "Twitter",
+        "username": "aungmyokyaw",
+        "url": "https://twitter.com/aungmyokyaw"
+      },
+      {
+        "network": "Stack Overflow",
+        "username": "aungmyokyaw",
+        "url": "https://stackoverflow.com/users/example/aungmyokyaw"
+      }
+    ]
+  },
+  
+  "work": [
+    {
+      "name": "TechCorp Solutions",
+      "position": "Senior Full-Stack Developer",
+      "url": "https://techcorp.com",
+      "startDate": "2020-03-01",
+      "summary": "Lead development of microservices architecture serving 2M+ users. Mentored junior developers and drove adoption of modern development practices.",
+      "highlights": [
+        "Architected and implemented scalable microservices handling 10K+ requests/second",
+        "Reduced deployment time by 80% through CI/CD pipeline optimization",
+        "Led team of 6 developers in building real-time collaboration features",
+        "Improved application performance by 60% through code optimization and caching strategies"
+      ],
+      "type": "full-time",
+      "remote": true,
+      "technologies": ["TypeScript", "React", "Node.js", "AWS", "Docker", "Kubernetes", "PostgreSQL", "Redis"],
+      "teamSize": 6,
+      "location": "San Francisco, CA (Remote)"
+    },
+    {
+      "name": "StartupXYZ",
+      "position": "Full-Stack Developer",
+      "url": "https://startupxyz.com",
+      "startDate": "2018-06-01",
+      "endDate": "2020-02-28",
+      "summary": "Full-stack development for a B2B SaaS platform. Built features from conception to deployment in an agile environment.",
+      "highlights": [
+        "Developed core platform features used by 500+ enterprise clients",
+        "Built real-time dashboard using WebSockets and React",
+        "Implemented OAuth2 authentication system",
+        "Established testing practices achieving 90+ code coverage"
+      ],
+      "type": "full-time",
+      "remote": false,
+      "technologies": ["JavaScript", "React", "Express.js", "MongoDB", "AWS Lambda", "GraphQL"],
+      "teamSize": 4,
+      "location": "Austin, TX"
+    }
+  ],
+  
+  "projects": [
+    {
+      "name": "DevFolio JSON Schema",
+      "description": "A comprehensive TypeScript-first JSON schema for professional developer portfolios with Zod validation",
+      "highlights": [
+        "Created industry-standard schema with 15+ professional sections",
+        "Implemented comprehensive Zod validation with TypeScript support",
+        "Built extensible architecture supporting custom fields"
+      ],
+      "keywords": ["TypeScript", "JSON Schema", "Zod", "Validation", "Open Source"],
+      "startDate": "2024-01-15",
+      "endDate": "2024-07-28",
+      "url": "https://github.com/aungmyokyaw/devfolio-json-schema",
+      "repository": "https://github.com/aungmyokyaw/devfolio-json-schema",
+      "type": "open-source",
+      "status": "completed",
+      "technologies": ["TypeScript", "Zod", "Node.js", "JSON Schema"],
+      "role": "Lead Developer & Architect"
+    },
+    {
+      "name": "E-Commerce Microservices Platform",
+      "description": "Scalable e-commerce platform built with microservices architecture, handling inventory, orders, payments, and user management",
+      "highlights": [
+        "Built event-driven architecture with Apache Kafka",
+        "Implemented CQRS pattern for complex business logic",
+        "Achieved 99.9% uptime in production",
+        "Processed $2M+ in transactions during peak periods"
+      ],
+      "keywords": ["Microservices", "Event Sourcing", "CQRS", "Apache Kafka", "Docker"],
+      "startDate": "2021-01-01",
+      "endDate": "2021-12-31",
+      "type": "professional",
+      "status": "completed",
+      "technologies": ["Node.js", "TypeScript", "Apache Kafka", "PostgreSQL", "Redis", "Docker", "Kubernetes"],
+      "role": "Lead Backend Developer",
+      "teamSize": 8,
+      "organization": "TechCorp Solutions"
+    }
+  ],
+  
+  "education": [
+    {
+      "institution": "University of Technology",
+      "url": "https://university.edu",
+      "area": "Computer Science",
+      "studyType": "Bachelor of Science",
+      "startDate": "2012-09-01",
+      "endDate": "2016-05-31",
+      "score": "3.8 GPA",
+      "courses": [
+        "Data Structures and Algorithms",
+        "Software Engineering",
+        "Database Systems",
+        "Computer Networks",
+        "Machine Learning",
+        "Web Development"
+      ],
+      "honors": ["Dean's List", "Computer Science Department Award"],
+      "activities": ["ACM Student Chapter President", "Programming Contest Team"],
+      "location": "Seattle, WA"
+    }
+  ],
+  
+  "moocs": [
+    {
+      "courseTitle": "AWS Cloud Solutions Architect Specialization",
+      "type": "Specialization",
+      "status": "Completed",
+      "certificateLink": "https://coursera.org/verify/specialization/ABC123",
+      "provider": "Coursera",
+      "startDate": "2023-01-15",
+      "completionDate": "2023-04-20",
+      "courses": [
+        {
+          "title": "AWS Cloud Technical Essentials",
+          "certificateLink": "https://coursera.org/verify/certificate/DEF456",
+          "completionDate": "2023-02-15",
+          "skills": ["AWS EC2", "AWS S3", "AWS IAM", "Cloud Architecture"]
+        },
+        {
+          "title": "Architecting Solutions on AWS",
+          "certificateLink": "https://coursera.org/verify/certificate/GHI789",
+          "completionDate": "2023-03-20",
+          "skills": ["AWS VPC", "Load Balancing", "Auto Scaling", "Monitoring"]
+        }
+      ],
+      "skills": ["AWS", "Cloud Architecture", "Infrastructure as Code", "DevOps"],
+      "duration": 120,
+      "instructors": ["AWS Training Team"]
+    },
+    {
+      "courseTitle": "Meta Back-End Developer Professional Certificate",
+      "type": "Bundle",
+      "status": "Completed",
+      "certificateLink": "https://coursera.org/verify/professional-cert/JKL012",
+      "provider": "Coursera",
+      "completionDate": "2022-08-15",
+      "courses": [
+        {
+          "title": "Introduction to Back-End Development",
+          "certificateLink": "https://coursera.org/verify/certificate/MNO345"
+        },
+        {
+          "title": "Programming in Python",
+          "certificateLink": "https://coursera.org/verify/certificate/PQR678"
+        },
+        {
+          "title": "Django Web Framework",
+          "certificateLink": "https://coursera.org/verify/certificate/STU901"
+        }
+      ],
+      "skills": ["Python", "Django", "REST APIs", "Database Design"],
+      "duration": 240
+    }
+  ],
+  
+  "certifications": [
+    {
+      "name": "AWS Certified Solutions Architect - Professional",
+      "issuer": "Amazon Web Services",
+      "date": "2023-06-15",
+      "expirationDate": "2026-06-15",
+      "url": "https://aws.amazon.com/certification/certified-solutions-architect-professional/",
+      "certificationId": "AWS-SAP-12345",
+      "description": "Validates advanced technical skills and experience in designing distributed applications and systems on the AWS platform",
+      "skills": ["AWS", "Cloud Architecture", "Solution Design", "Cost Optimization"],
+      "level": "professional"
+    },
+    {
+      "name": "Certified Kubernetes Administrator (CKA)",
+      "issuer": "Cloud Native Computing Foundation",
+      "date": "2022-11-20",
+      "expirationDate": "2025-11-20",
+      "url": "https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/",
+      "badgeUrl": "https://credly.com/badges/example-cka-badge",
+      "certificationId": "CKA-67890",
+      "skills": ["Kubernetes", "Container Orchestration", "DevOps", "Cloud Native"],
+      "level": "professional"
+    }
+  ],
+  
+  "skills": [
+    {
+      "name": "TypeScript",
+      "level": "expert",
+      "category": "programming-languages",
+      "yearsOfExperience": 5,
+      "keywords": ["JavaScript", "Static Typing", "ES6+", "Node.js"],
+      "lastUsed": "2024-07-28",
+      "rating": 9
+    },
+    {
+      "name": "React",
+      "level": "expert",
+      "category": "frameworks",
+      "yearsOfExperience": 6,
+      "keywords": ["Hooks", "Redux", "Context API", "Next.js"],
+      "lastUsed": "2024-07-28",
+      "certifications": ["Meta React Developer Certificate"],
+      "rating": 9
+    },
+    {
+      "name": "AWS",
+      "level": "advanced",
+      "category": "cloud",
+      "yearsOfExperience": 4,
+      "keywords": ["EC2", "S3", "Lambda", "RDS", "CloudFormation"],
+      "lastUsed": "2024-07-25",
+      "certifications": ["AWS Solutions Architect Professional"],
+      "rating": 8
+    },
+    {
+      "name": "Node.js",
+      "level": "expert",
+      "category": "platforms",
+      "yearsOfExperience": 7,
+      "keywords": ["Express.js", "Fastify", "Microservices", "REST APIs"],
+      "lastUsed": "2024-07-28",
+      "rating": 9
+    },
+    {
+      "name": "Leadership",
+      "level": "advanced",
+      "category": "soft-skills",
+      "yearsOfExperience": 3,
+      "keywords": ["Team Management", "Mentoring", "Project Planning", "Agile"],
+      "rating": 8
+    }
+  ],
+  
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "full-professional",
+      "speaking": "full-professional",
+      "writing": "full-professional",
+      "reading": "native-bilingual",
+      "listening": "native-bilingual",
+      "certifications": [
+        {
+          "name": "TOEFL iBT",
+          "score": "110/120",
+          "date": "2020-06-15",
+          "url": "https://toefl.org/verify/example"
+        }
+      ]
+    },
+    {
+      "language": "Myanmar (Burmese)",
+      "fluency": "native-bilingual",
+      "native": true
+    },
+    {
+      "language": "Japanese",
+      "fluency": "limited-working",
+      "speaking": "elementary",
+      "writing": "elementary",
+      "reading": "limited-working",
+      "listening": "limited-working",
+      "certifications": [
+        {
+          "name": "JLPT N3",
+          "date": "2023-12-03"
+        }
+      ]
+    }
+  ],
+  
+  "interests": [
+    {
+      "name": "Open Source Development",
+      "keywords": ["GitHub", "Community", "Collaboration", "TypeScript"],
+      "category": "technology",
+      "level": "passionate",
+      "description": "Active contributor to open-source projects, particularly in the TypeScript and React ecosystems"
+    },
+    {
+      "name": "Photography",
+      "keywords": ["Landscape", "Street Photography", "Adobe Lightroom"],
+      "category": "arts",
+      "level": "hobby",
+      "description": "Amateur photographer with focus on urban landscapes and street photography"
+    },
+    {
+      "name": "Hiking",
+      "keywords": ["Nature", "Outdoor Activities", "National Parks"],
+      "category": "sports",
+      "level": "passionate"
+    }
+  ],
+  
+  "achievements": [
+    {
+      "title": "TechCorp Innovation Award",
+      "date": "2023-12-15",
+      "issuer": "TechCorp Solutions",
+      "summary": "Recognized for developing innovative microservices architecture that improved system performance by 60%",
+      "category": "innovation",
+      "url": "https://techcorp.com/awards/2023/innovation"
+    },
+    {
+      "title": "Top Contributor - Open Source Project XYZ",
+      "date": "2023-06-30",
+      "issuer": "Open Source Community",
+      "summary": "Ranked among top 5 contributors for the year with 50+ merged pull requests",
+      "category": "technical"
+    }
+  ],
+  
+  "awards": [
+    {
+      "title": "Best Computer Science Student",
+      "date": "2016-05-31",
+      "awarder": "University of Technology",
+      "summary": "Awarded for outstanding academic performance and contribution to the computer science department",
+      "category": "academic",
+      "level": "organizational"
+    }
+  ],
+  
+  "publications": [
+    {
+      "name": "Building Scalable Microservices with TypeScript and Node.js",
+      "publisher": "TechBlog",
+      "releaseDate": "2023-08-15",
+      "url": "https://techblog.com/scalable-microservices-typescript",
+      "type": "blog-post",
+      "summary": "A comprehensive guide to building production-ready microservices using TypeScript, covering architecture patterns, testing strategies, and deployment practices",
+      "keywords": ["Microservices", "TypeScript", "Node.js", "Architecture", "DevOps"]
+    }
+  ],
+  
+  "speaking": [
+    {
+      "title": "Modern Full-Stack Development with TypeScript",
+      "event": "JavaScript Conference 2023",
+      "organizer": "JS Community",
+      "date": "2023-09-20",
+      "location": "San Francisco, CA",
+      "url": "https://jsconf.com/2023/speakers/aung-myo-kyaw",
+      "slidesUrl": "https://slides.com/aungmyokyaw/modern-fullstack-typescript",
+      "description": "Exploring modern development practices using TypeScript across the full stack",
+      "audienceSize": 300,
+      "type": "conference-talk",
+      "topics": ["TypeScript", "Full-Stack Development", "Best Practices"]
+    }
+  ],
+  
+  "volunteer": [
+    {
+      "organization": "Code for Good",
+      "position": "Technical Mentor",
+      "url": "https://codeforgood.org",
+      "startDate": "2021-01-01",
+      "summary": "Mentor aspiring developers from underrepresented communities in web development and career guidance",
+      "highlights": [
+        "Mentored 20+ junior developers",
+        "Conducted workshops on React and TypeScript",
+        "Helped 15+ mentees land their first tech jobs"
+      ],
+      "cause": "Education and Technology Access"
+    }
+  ],
+  
+  "references": [
+    {
+      "name": "Sarah Johnson",
+      "reference": "Aung is an exceptional developer and team lead. His technical expertise in TypeScript and cloud architecture, combined with his mentoring abilities, make him invaluable to any team. He consistently delivers high-quality solutions while fostering a collaborative environment.",
+      "position": "Engineering Manager",
+      "company": "TechCorp Solutions",
+      "relationship": "manager",
+      "contact": {
+        "email": "sarah.johnson@techcorp.com",
+        "linkedin": "https://linkedin.com/in/sarahjohnsontech"
+      },
+      "date": "2024-01-15"
+    }
+  ],
+  
+  "meta": {
+    "lastModified": "2024-07-28T10:30:00Z",
+    "version": "1.2.0",
+    "theme": "modern-dark",
+    "visibility": "public",
+    "custom": {
+      "portfolio_url": "https://aungmyokyaw.dev",
+      "resume_pdf": "https://aungmyokyaw.dev/resume.pdf",
+      "preferred_contact": "email"
+    }
+  }
+};
+
+export default sampleDevFolio;

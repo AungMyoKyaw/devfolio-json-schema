@@ -1,19 +1,44 @@
 {
   "name": "devfolio-json-schema",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A comprehensive TypeScript-first JSON schema for professional developer portfolios with Zod validation",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "node -e \"console.log('Testing schema...'); require('./dist/test.js')\"",
+    "validate": "node -e \"require('./dist/examples/validate-sample.js')\"",
+    "clean": "rm -rf dist"
   },
+  "keywords": [
+    "json-schema",
+    "portfolio",
+    "resume",
+    "developer",
+    "zod",
+    "typescript",
+    "validation",
+    "professional"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AungMyoKyaw/devfolio-json-schema.git"
   },
-  "author": "",
+  "author": "Aung Myo Kyaw",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/AungMyoKyaw/devfolio-json-schema/issues"
   },
-  "homepage": "https://github.com/AungMyoKyaw/devfolio-json-schema#readme"
+  "homepage": "https://github.com/AungMyoKyaw/devfolio-json-schema#readme",
+  "dependencies": {
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.5.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
 }
