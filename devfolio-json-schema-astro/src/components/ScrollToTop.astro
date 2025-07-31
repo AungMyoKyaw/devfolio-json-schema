@@ -1,0 +1,36 @@
+---
+import { ArrowUp } from 'lucide-astro';
+---
+
+<button
+	id="scroll-to-top"
+	class="fixed bottom-8 right-8 bg-purple-600 text-white p-3 rounded-full shadow-lg transition-all duration-300 opacity-0 scale-0 hover:bg-purple-700 hover:scale-110 z-50"
+	aria-label="Scroll to top"
+>
+	<ArrowUp size={20} />
+</button>
+
+<script>
+	document.addEventListener('DOMContentLoaded', function() {
+		const scrollToTopBtn = document.getElementById('scroll-to-top');
+
+		function toggleScrollButton() {
+			if (window.scrollY > 300) {
+				scrollToTopBtn?.classList.remove('opacity-0', 'scale-0');
+				scrollToTopBtn?.classList.add('opacity-100', 'scale-100');
+			} else {
+				scrollToTopBtn?.classList.remove('opacity-100', 'scale-100');
+				scrollToTopBtn?.classList.add('opacity-0', 'scale-0');
+			}
+		}
+
+		window.addEventListener('scroll', toggleScrollButton);
+
+		scrollToTopBtn?.addEventListener('click', () => {
+			window.scrollTo({
+				top: 0,
+				behavior: 'smooth'
+			});
+		});
+	});
+</script>
