@@ -37,6 +37,7 @@ This product page showcases the comprehensive features and capabilities of DevFo
 This product page follows world-class UI/UX design principles:
 
 ### Visual Design
+
 - **Clean, Modern Aesthetic** with professional color scheme
 - **Gradient Backgrounds** for visual appeal and depth
 - **Consistent Typography** with proper hierarchy
@@ -44,6 +45,7 @@ This product page follows world-class UI/UX design principles:
 - **Code Syntax Highlighting** for better readability
 
 ### User Experience
+
 - **Clear Value Proposition** immediately visible
 - **Progressive Information Disclosure** from overview to details
 - **Interactive Code Examples** with tabbed interface
@@ -51,6 +53,7 @@ This product page follows world-class UI/UX design principles:
 - **Mobile-Responsive** design for all devices
 
 ### Content Strategy
+
 - **Benefit-Focused** messaging over feature lists
 - **Real-World Examples** showing practical usage
 - **Social Proof** through comparisons and statistics
@@ -59,6 +62,7 @@ This product page follows world-class UI/UX design principles:
 ## 🚀 Getting Started
 
 ### Prerequisites
+
 - Node.js 16+
 - npm, yarn, or pnpm
 
@@ -105,16 +109,20 @@ The product page is fully responsive and optimized for:
 ## 🔧 Customization
 
 ### Colors
+
 The main brand colors are defined in CSS custom properties:
+
 - Primary: `#667eea` (Purple-blue gradient start)
 - Secondary: `#764ba2` (Purple gradient end)
 - Accent: `#fbbf24` (Golden yellow)
 
 ### Typography
+
 - **Headings**: Inter font family with various weights
 - **Code**: JetBrains Mono for code blocks and technical content
 
 ### Layout
+
 - **Container Max Width**: 1200px
 - **Grid Systems**: CSS Grid for complex layouts, Flexbox for components
 - **Spacing**: Consistent rem-based spacing scale
@@ -133,11 +141,13 @@ Currently, the page doesn't include analytics, but you can easily add:
 ### Recommended Platforms
 
 1. **Vercel** (Recommended)
+
    ```bash
    npx vercel
    ```
 
 2. **Netlify**
+
    ```bash
    npm run build
    # Upload dist/ folder to Netlify
@@ -154,6 +164,7 @@ Currently, the page doesn't include analytics, but you can easily add:
 This product page is part of the DevFolio JSON Schema project. Contributions are welcome!
 
 ### Areas for Improvement
+
 - Additional interactive examples
 - More detailed comparison charts
 - Integration with live schema validation
