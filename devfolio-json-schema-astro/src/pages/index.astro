@@ -2,77 +2,81 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout>
+<Layout title="DevFolio JSON Schema - Complete TypeScript Schema for Developer Portfolios">
 	<main>
 		<!-- Hero Section -->
-		<section class="hero">
-			<div class="container">
-				<div class="hero-content">
-					<div class="hero-badge">
-						<span class="badge">🚀 TypeScript-First</span>
-						<span class="badge">✅ Zod Validation</span>
-						<span class="badge">📦 v1.0.0-beta</span>
+		<section class="hero-bg hero-pattern relative pt-24 pb-32 text-white overflow-hidden">
+			<div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center relative z-10">
+				<div class="text-center lg:text-left">
+					<div class="flex flex-wrap gap-3 mb-8 justify-center lg:justify-start">
+						<span class="bg-white/20 backdrop-blur-md px-4 py-2 rounded-full text-sm font-medium border border-white/30">TypeScript Ready</span>
+						<span class="bg-white/20 backdrop-blur-md px-4 py-2 rounded-full text-sm font-medium border border-white/30">Zod Validation</span>
+						<span class="bg-white/20 backdrop-blur-md px-4 py-2 rounded-full text-sm font-medium border border-white/30">JSON Schema</span>
 					</div>
-					<h1 class="hero-title">
-						The Complete JSON Schema for
+					<h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
+						Complete Schema for
+						<br>
 						<span class="gradient-text">Developer Portfolios</span>
 					</h1>
-					<p class="hero-description">
-						A comprehensive, TypeScript-first JSON schema that standardizes professional developer portfolios.
-						Built with Zod validation, covering everything from basic info to MOOCs, certifications, and achievements.
+					<p class="text-lg md:text-xl lg:text-2xl mb-10 opacity-90 leading-relaxed">
+						The only TypeScript-first JSON schema you need for professional developer portfolios.
+						Built with modern web standards and enhanced with powerful validation.
 					</p>
-					<div class="hero-actions">
-						<a href="#installation" class="btn btn-primary">Get Started</a>
-						<a href="https://github.com/AungMyoKyaw/devfolio-json-schema" class="btn btn-secondary" target="_blank">
-							<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-								<path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-							</svg>
-							View on GitHub
+					<div class="flex flex-col sm:flex-row gap-4 mb-12 justify-center lg:justify-start">
+						<a href="https://github.com/AungMyoKyaw/devfolio-json-schema"
+							class="bg-white text-purple-600 font-semibold px-8 py-4 rounded-lg inline-flex items-center gap-2 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl text-lg min-h-[48px] justify-center"
+							target="_blank">
+							Get Started on GitHub
+						</a>
+						<a href="https://www.npmjs.com/package/devfolio-json-schema"
+							class="bg-white/10 text-white font-semibold px-8 py-4 rounded-lg inline-flex items-center gap-2 border-2 border-white/30 backdrop-blur-sm transition-all duration-300 hover:bg-white/20 hover:border-white/50 text-lg min-h-[48px] justify-center"
+							target="_blank">
+							View on NPM
 						</a>
 					</div>
-					<div class="hero-stats">
-						<div class="stat">
-							<div class="stat-number">15+</div>
-							<div class="stat-label">Schema Sections</div>
+					<div class="grid grid-cols-3 gap-8 mb-2">
+						<div class="text-center">
+							<div class="text-2xl md:text-3xl font-extrabold mb-1">50+</div>
+							<div class="text-sm opacity-80">Schema Fields</div>
 						</div>
-						<div class="stat">
-							<div class="stat-number">100%</div>
-							<div class="stat-label">Type Safe</div>
+						<div class="text-center">
+							<div class="text-2xl md:text-3xl font-extrabold mb-1">Zero</div>
+							<div class="text-sm opacity-80">Dependencies</div>
 						</div>
-						<div class="stat">
-							<div class="stat-number">Zero</div>
-							<div class="stat-label">Dependencies*</div>
+						<div class="text-center">
+							<div class="text-2xl md:text-3xl font-extrabold mb-1">100%</div>
+							<div class="text-sm opacity-80">TypeScript</div>
 						</div>
 					</div>
-					<div class="dependency-note">*Only Zod for validation</div>
+					<p class="text-xs opacity-70 text-center lg:text-left">* Runtime dependencies: 0</p>
 				</div>
-				<div class="hero-visual">
-					<div class="code-preview">
-						<div class="code-header">
-							<div class="code-dots">
-								<span></span><span></span><span></span>
+				<div class="flex justify-center lg:justify-end">
+					<div class="bg-slate-800 rounded-2xl overflow-hidden shadow-2xl max-w-full w-full min-w-[320px] lg:min-w-[400px]">
+						<div class="bg-slate-700 px-6 py-4 border-b border-slate-600 flex items-center">
+							<div class="flex gap-2 mr-4">
+								<span class="w-3 h-3 bg-red-500 rounded-full"></span>
+								<span class="w-3 h-3 bg-yellow-500 rounded-full"></span>
+								<span class="w-3 h-3 bg-green-500 rounded-full"></span>
 							</div>
-							<div class="code-title">portfolio.ts</div>
+							<div class="text-slate-300 text-sm font-medium">portfolio.ts</div>
 						</div>
-						<div class="code-content">
-							<pre><code class="mono"><span class="token-import">import</span> <span class="token-punctuation">{</span> <span class="token-variable">DevFolioSchema</span> <span class="token-punctuation">}</span> <span class="token-import">from</span> <span class="token-string">'devfolio-json-schema'</span><span class="token-punctuation">;</span>
+						<div class="p-6 overflow-x-auto">
+							<pre class="text-sm leading-relaxed text-slate-200 mono"><code><span class="token-import">import</span> <span class="token-punctuation">{</span> <span class="token-variable">DevFolioSchema</span> <span class="token-punctuation">}</span> <span class="token-import">from</span> <span class="token-string">'devfolio-json-schema'</span><span class="token-punctuation">;</span>
 
 <span class="token-comment">// Your portfolio data with full TypeScript support</span>
 <span class="token-keyword">const</span> <span class="token-variable">portfolio</span> <span class="token-operator">=</span> <span class="token-punctuation">{</span>
   <span class="token-property">basics</span><span class="token-punctuation">:</span> <span class="token-punctuation">{</span>
     <span class="token-property">name</span><span class="token-punctuation">:</span> <span class="token-string">"John Doe"</span><span class="token-punctuation">,</span>
-    <span class="token-property">label</span><span class="token-punctuation">:</span> <span class="token-string">"Full-Stack Developer"</span><span class="token-punctuation">,</span>
-    <span class="token-property">email</span><span class="token-punctuation">:</span> <span class="token-string">"john@example.com"</span>
-  <span class="token-punctuation">},</span>
-  <span class="token-property">skills</span><span class="token-punctuation">:</span> <span class="token-punctuation">[</span><span class="token-punctuation">{</span>
-    <span class="token-property">name</span><span class="token-punctuation">:</span> <span class="token-string">"TypeScript"</span><span class="token-punctuation">,</span>
-    <span class="token-property">level</span><span class="token-punctuation">:</span> <span class="token-string">"expert"</span><span class="token-punctuation">,</span>
-    <span class="token-property">yearsOfExperience</span><span class="token-punctuation">:</span> <span class="token-number">5</span>
-  <span class="token-punctuation">}]</span>
-<span class="token-punctuation">};</span>
+    <span class="token-property">label</span><span class="token-punctuation">:</span> <span class="token-string">"Full Stack Developer"</span><span class="token-punctuation">,</span>
+    <span class="token-property">email</span><span class="token-punctuation">:</span> <span class="token-string">"john@example.com"</span><span class="token-punctuation">,</span>
+    <span class="token-property">website</span><span class="token-punctuation">:</span> <span class="token-string">"https://johndoe.dev"</span>
+  <span class="token-punctuation">}</span><span class="token-punctuation">,</span>
+  <span class="token-property">skills</span><span class="token-punctuation">:</span> <span class="token-punctuation">[</span><span class="token-operator">...</span><span class="token-punctuation">]</span><span class="token-punctuation">,</span>
+  <span class="token-property">experience</span><span class="token-punctuation">:</span> <span class="token-punctuation">[</span><span class="token-operator">...</span><span class="token-punctuation">]</span>
+<span class="token-punctuation">}</span><span class="token-punctuation">;</span>
 
-<span class="token-comment">// Validate with full error reporting</span>
-<span class="token-keyword">const</span> <span class="token-variable">result</span> <span class="token-operator">=</span> <span class="token-function">DevFolioSchema</span><span class="token-punctuation">.</span><span class="token-function">parse</span><span class="token-punctuation">(</span><span class="token-variable">portfolio</span><span class="token-punctuation">);</span></code></pre>
+<span class="token-comment">// Validate with detailed error messages</span>
+<span class="token-keyword">const</span> <span class="token-variable">result</span> <span class="token-operator">=</span> <span class="token-function">DevFolioSchema</span><span class="token-punctuation">.</span><span class="token-function">safeParse</span><span class="token-punctuation">(</span><span class="token-variable">portfolio</span><span class="token-punctuation">)</span><span class="token-punctuation">;</span></code></pre>
 						</div>
 					</div>
 				</div>
@@ -80,115 +84,114 @@ import Layout from '../layouts/Layout.astro';
 		</section>
 
 		<!-- Features Section -->
-		<section class="features" id="features">
-			<div class="container">
-				<div class="section-header">
-					<h2>Comprehensive Portfolio Schema</h2>
-					<p>Everything you need to represent a complete professional developer profile</p>
+		<section class="py-32 bg-slate-50">
+			<div class="max-w-6xl mx-auto px-6">
+				<div class="text-center mb-16">
+					<h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">Why Choose DevFolio JSON Schema?</h2>
+					<p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">Modern developer portfolios need modern solutions. Built with TypeScript, validated with Zod, and designed for the future.</p>
 				</div>
-				<div class="features-grid">
-					<div class="feature-card">
-						<div class="feature-icon">🏗️</div>
-						<h3>TypeScript-First Architecture</h3>
-						<p>Built with Zod for complete type safety and inference. Get full TypeScript support out of the box with intelligent autocomplete and error checking.</p>
+				<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+					<div class="bg-white p-8 rounded-2xl shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+						<div class="text-4xl mb-6">🔧</div>
+						<h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-4">TypeScript First</h3>
+						<p class="text-gray-600 leading-relaxed">Built from the ground up with TypeScript. Get full intellisense, type safety, and compile-time validation for your portfolio data.</p>
 					</div>
-					<div class="feature-card">
-						<div class="feature-icon">✅</div>
-						<h3>Comprehensive Validation</h3>
-						<p>Built-in validation for emails, URLs, dates, and custom business rules. Detailed error reporting helps you fix issues quickly.</p>
+					<div class="bg-white p-8 rounded-2xl shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+						<div class="text-4xl mb-6">✅</div>
+						<h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-4">Zod Validation</h3>
+						<p class="text-gray-600 leading-relaxed">Powered by Zod for runtime type checking and detailed error messages. Catch data issues before they become problems.</p>
 					</div>
-					<div class="feature-card">
-						<div class="feature-icon">🎓</div>
-						<h3>Modern Learning Tracking</h3>
-						<p>Full support for MOOCs, online certifications, and modern learning platforms like Coursera, edX, and Udacity with progress tracking.</p>
+					<div class="bg-white p-8 rounded-2xl shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+						<div class="text-4xl mb-6">🎓</div>
+						<h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-4">MOOC Support</h3>
+						<p class="text-gray-600 leading-relaxed">First-class support for online courses, certifications, and modern learning platforms like Coursera, edX, and Udemy.</p>
 					</div>
-					<div class="feature-card">
-						<div class="feature-icon">🚀</div>
-						<h3>Extensible & Future-Proof</h3>
-						<p>Easy to customize and extend with additional fields. Based on JSON Resume standard with significant modern enhancements.</p>
+					<div class="bg-white p-8 rounded-2xl shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+						<div class="text-4xl mb-6">🏢</div>
+						<h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-4">Professional Ready</h3>
+						<p class="text-gray-600 leading-relaxed">Comprehensive fields for work experience, skills assessment, and professional achievements that recruiters want to see.</p>
 					</div>
-					<div class="feature-card">
-						<div class="feature-icon">📊</div>
-						<h3>Advanced Skills Management</h3>
-						<p>Categorized skills with proficiency levels, years of experience, ratings, and certification associations for detailed skill tracking.</p>
+					<div class="bg-white p-8 rounded-2xl shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+						<div class="text-4xl mb-6">📱</div>
+						<h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-4">Modern Web</h3>
+						<p class="text-gray-600 leading-relaxed">Support for social profiles, digital portfolios, and modern web presence including GitHub, LinkedIn, and personal websites.</p>
 					</div>
-					<div class="feature-card">
-						<div class="feature-icon">🌟</div>
-						<h3>Professional Achievements</h3>
-						<p>Track awards, achievements, publications, speaking engagements, patents, and volunteer work for a complete professional picture.</p>
+					<div class="bg-white p-8 rounded-2xl shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+						<div class="text-4xl mb-6">⚡</div>
+						<h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-4">Zero Dependencies</h3>
+						<p class="text-gray-600 leading-relaxed">No runtime dependencies means smaller bundle sizes and fewer security concerns. Pure TypeScript with optional Zod validation.</p>
 					</div>
 				</div>
 			</div>
 		</section>
 
 		<!-- Schema Sections -->
-		<section class="schema-sections">
-			<div class="container">
-				<div class="section-header">
-					<h2>Complete Portfolio Coverage</h2>
-					<p>15+ specialized sections covering every aspect of a professional developer profile</p>
+		<section class="py-32">
+			<div class="max-w-6xl mx-auto px-6">
+				<div class="text-center mb-16">
+					<h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">Complete Schema Coverage</h2>
+					<p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">Every aspect of your professional profile, organized and validated</p>
 				</div>
-				<div class="sections-grid">
+				<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
 					<div class="section-category">
-						<h3>Core Sections</h3>
-						<div class="section-items">
-							<div class="section-item">
-								<strong>basics</strong> - Personal info, contact details, location, social profiles
+						<h3 class="text-xl md:text-2xl font-bold text-purple-600 mb-6 pb-2 border-b-2 border-gray-200">Core Information</h3>
+						<div class="space-y-4">
+							<div class="p-4 bg-slate-50 rounded-lg border-l-4 border-purple-600">
+								<strong class="text-purple-600 mono text-sm">basics</strong> - Personal information and contact details
 							</div>
-							<div class="section-item">
-								<strong>work</strong> - Professional experience with detailed descriptions
+							<div class="p-4 bg-slate-50 rounded-lg border-l-4 border-purple-600">
+								<strong class="text-purple-600 mono text-sm">social</strong> - Social media and professional profiles
 							</div>
-							<div class="section-item">
-								<strong>projects</strong> - Personal, professional, and open-source projects
+							<div class="p-4 bg-slate-50 rounded-lg border-l-4 border-purple-600">
+								<strong class="text-purple-600 mono text-sm">experience</strong> - Work history with detailed descriptions
 							</div>
-							<div class="section-item">
-								<strong>education</strong> - Formal education background
-							</div>
-							<div class="section-item">
-								<strong>skills</strong> - Technical and soft skills with proficiency levels
+							<div class="p-4 bg-slate-50 rounded-lg border-l-4 border-purple-600">
+								<strong class="text-purple-600 mono text-sm">education</strong> - Academic background and degrees
 							</div>
 						</div>
 					</div>
 					<div class="section-category">
-						<h3>Enhanced Sections</h3>
-						<div class="section-items">
-							<div class="section-item">
-								<strong>moocs</strong> - Online courses and specializations
+						<h3 class="text-xl md:text-2xl font-bold text-purple-600 mb-6 pb-2 border-b-2 border-gray-200">Skills & Expertise</h3>
+						<div class="space-y-4">
+							<div class="p-4 bg-slate-50 rounded-lg border-l-4 border-purple-600">
+								<strong class="text-purple-600 mono text-sm">skills</strong> - Technical and soft skills with ratings
 							</div>
-							<div class="section-item">
-								<strong>certifications</strong> - Professional certifications with expiry tracking
+							<div class="p-4 bg-slate-50 rounded-lg border-l-4 border-purple-600">
+								<strong class="text-purple-600 mono text-sm">certifications</strong> - Professional certifications with expiry
 							</div>
-							<div class="section-item">
-								<strong>awards</strong> - Recognition and awards received
+							<div class="p-4 bg-slate-50 rounded-lg border-l-4 border-purple-600">
+								<strong class="text-purple-600 mono text-sm">moocs</strong> - Online courses and specializations
 							</div>
-							<div class="section-item">
-								<strong>achievements</strong> - Professional milestones
-							</div>
-							<div class="section-item">
-								<strong>languages</strong> - Spoken languages with proficiency levels
+							<div class="p-4 bg-slate-50 rounded-lg border-l-4 border-purple-600">
+								<strong class="text-purple-600 mono text-sm">projects</strong> - Portfolio projects with technologies
 							</div>
 						</div>
 					</div>
 					<div class="section-category">
-						<h3>Advanced Sections</h3>
-						<div class="section-items">
-							<div class="section-item">
-								<strong>volunteer</strong> - Community involvement
+						<h3 class="text-xl md:text-2xl font-bold text-purple-600 mb-6 pb-2 border-b-2 border-gray-200">Additional Sections</h3>
+						<div class="space-y-4">
+							<div class="p-4 bg-slate-50 rounded-lg border-l-4 border-purple-600">
+								<strong class="text-purple-600 mono text-sm">awards</strong> - Recognition and awards received
 							</div>
-							<div class="section-item">
-								<strong>publications</strong> - Articles, papers, and technical writings
+							<div class="p-4 bg-slate-50 rounded-lg border-l-4 border-purple-600">
+								<strong class="text-purple-600 mono text-sm">achievements</strong> - Professional milestones
 							</div>
-							<div class="section-item">
-								<strong>speaking</strong> - Conference talks and presentations
+							<div class="p-4 bg-slate-50 rounded-lg border-l-4 border-purple-600">
+								<strong class="text-purple-600 mono text-sm">languages</strong> - Spoken languages with proficiency levels
 							</div>
-							<div class="section-item">
-								<strong>media</strong> - Media appearances and interviews
+						</div>
+					</div>
+					<div class="section-category">
+						<h3 class="text-xl md:text-2xl font-bold text-purple-600 mb-6 pb-2 border-b-2 border-gray-200">Advanced Sections</h3>
+						<div class="space-y-4">
+							<div class="p-4 bg-slate-50 rounded-lg border-l-4 border-purple-600">
+								<strong class="text-purple-600 mono text-sm">volunteer</strong> - Community involvement
 							</div>
-							<div class="section-item">
-								<strong>patents</strong> - Patent applications and grants
+							<div class="p-4 bg-slate-50 rounded-lg border-l-4 border-purple-600">
+								<strong class="text-purple-600 mono text-sm">publications</strong> - Articles, papers, and technical writings
 							</div>
-							<div class="section-item">
-								<strong>references</strong> - Professional references and testimonials
+							<div class="p-4 bg-slate-50 rounded-lg border-l-4 border-purple-600">
+								<strong class="text-purple-600 mono text-sm">references</strong> - Professional references and recommendations
 							</div>
 						</div>
 					</div>
@@ -197,53 +200,78 @@ import Layout from '../layouts/Layout.astro';
 		</section>
 
 		<!-- Code Examples -->
-		<section class="code-examples" id="examples">
-			<div class="container">
-				<div class="section-header">
-					<h2>See It In Action</h2>
-					<p>Real-world examples showing the power and flexibility of DevFolio JSON Schema</p>
+		<section class="py-32 bg-slate-50">
+			<div class="max-w-5xl mx-auto px-6">
+				<div class="text-center mb-16">
+					<h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">See It In Action</h2>
+					<p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">Explore different sections of the schema with real examples</p>
 				</div>
-				<div class="examples-tabs">
-					<div class="tab-buttons">
-						<button class="tab-button active" data-tab="validation">Validation</button>
-						<button class="tab-button" data-tab="skills">Skills</button>
-						<button class="tab-button" data-tab="moocs">MOOCs</button>
-						<button class="tab-button" data-tab="projects">Projects</button>
+				<div class="max-w-4xl mx-auto">
+					<div class="flex flex-wrap gap-2 mb-8 justify-center overflow-x-auto pb-2">
+						<button class="tab-button bg-purple-600 text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 cursor-pointer hover:bg-purple-700 min-h-[48px] active" data-tab="basics">Basics</button>
+						<button class="tab-button bg-gray-200 text-gray-700 px-6 py-3 rounded-lg font-medium transition-all duration-300 cursor-pointer hover:bg-gray-300 min-h-[48px]" data-tab="experience">Experience</button>
+						<button class="tab-button bg-gray-200 text-gray-700 px-6 py-3 rounded-lg font-medium transition-all duration-300 cursor-pointer hover:bg-gray-300 min-h-[48px]" data-tab="skills">Skills</button>
+						<button class="tab-button bg-gray-200 text-gray-700 px-6 py-3 rounded-lg font-medium transition-all duration-300 cursor-pointer hover:bg-gray-300 min-h-[48px]" data-tab="moocs">MOOCs</button>
+						<button class="tab-button bg-gray-200 text-gray-700 px-6 py-3 rounded-lg font-medium transition-all duration-300 cursor-pointer hover:bg-gray-300 min-h-[48px]" data-tab="projects">Projects</button>
 					</div>
 
-					<div class="tab-content active" data-tab="validation">
-						<div class="code-block">
-							<div class="code-header">
-								<div class="code-title">validation-example.ts</div>
+					<div class="tab-content active" data-tab="basics">
+						<div class="bg-slate-800 rounded-2xl overflow-hidden shadow-xl">
+							<div class="bg-slate-700 px-6 py-4 border-b border-slate-600">
+								<div class="text-slate-300 text-base font-medium">basics-example.json</div>
 							</div>
-							<pre><code class="mono"><span class="token-import">import</span> <span class="token-punctuation">{</span> <span class="token-variable">validateDevFolio</span> <span class="token-punctuation">}</span> <span class="token-import">from</span> <span class="token-string">'devfolio-json-schema'</span><span class="token-punctuation">;</span>
-
-<span class="token-keyword">const</span> <span class="token-variable">portfolioData</span> <span class="token-operator">=</span> <span class="token-punctuation">{</span>
-  <span class="token-property">basics</span><span class="token-punctuation">:</span> <span class="token-punctuation">{</span>
-    <span class="token-property">name</span><span class="token-punctuation">:</span> <span class="token-string">"Jane Developer"</span><span class="token-punctuation">,</span>
-    <span class="token-property">email</span><span class="token-punctuation">:</span> <span class="token-string">"jane@example.com"</span><span class="token-punctuation">,</span>
-    <span class="token-property">url</span><span class="token-punctuation">:</span> <span class="token-string">"https://jane.dev"</span>
+							<pre class="p-8 overflow-x-auto bg-slate-800 text-base leading-relaxed text-slate-200 mono"><code><span class="token-punctuation">{</span>
+  <span class="token-property">"basics"</span><span class="token-punctuation">:</span> <span class="token-punctuation">{</span>
+    <span class="token-property">"name"</span><span class="token-punctuation">:</span> <span class="token-string">"John Doe"</span><span class="token-punctuation">,</span>
+    <span class="token-property">"label"</span><span class="token-punctuation">:</span> <span class="token-string">"Senior Full Stack Developer"</span><span class="token-punctuation">,</span>
+    <span class="token-property">"picture"</span><span class="token-punctuation">:</span> <span class="token-string">"https://johndoe.dev/avatar.jpg"</span><span class="token-punctuation">,</span>
+    <span class="token-property">"email"</span><span class="token-punctuation">:</span> <span class="token-string">"john@johndoe.dev"</span><span class="token-punctuation">,</span>
+    <span class="token-property">"phone"</span><span class="token-punctuation">:</span> <span class="token-string">"+1-555-0123"</span><span class="token-punctuation">,</span>
+    <span class="token-property">"website"</span><span class="token-punctuation">:</span> <span class="token-string">"https://johndoe.dev"</span><span class="token-punctuation">,</span>
+    <span class="token-property">"summary"</span><span class="token-punctuation">:</span> <span class="token-string">"Experienced developer with 8+ years in web technologies..."</span><span class="token-punctuation">,</span>
+    <span class="token-property">"location"</span><span class="token-punctuation">:</span> <span class="token-punctuation">{</span>
+      <span class="token-property">"address"</span><span class="token-punctuation">:</span> <span class="token-string">"123 Tech Street"</span><span class="token-punctuation">,</span>
+      <span class="token-property">"city"</span><span class="token-punctuation">:</span> <span class="token-string">"San Francisco"</span><span class="token-punctuation">,</span>
+      <span class="token-property">"region"</span><span class="token-punctuation">:</span> <span class="token-string">"CA"</span><span class="token-punctuation">,</span>
+      <span class="token-property">"postalCode"</span><span class="token-punctuation">:</span> <span class="token-string">"94105"</span><span class="token-punctuation">,</span>
+      <span class="token-property">"countryCode"</span><span class="token-punctuation">:</span> <span class="token-string">"US"</span>
+    <span class="token-punctuation">}</span>
   <span class="token-punctuation">}</span>
-<span class="token-punctuation">};</span>
-
-<span class="token-keyword">const</span> <span class="token-variable">result</span> <span class="token-operator">=</span> <span class="token-function">validateDevFolio</span><span class="token-punctuation">(</span><span class="token-variable">portfolioData</span><span class="token-punctuation">);</span>
-
-<span class="token-keyword">if</span> <span class="token-punctuation">(</span><span class="token-variable">result</span><span class="token-punctuation">.</span><span class="token-property">success</span><span class="token-punctuation">)</span> <span class="token-punctuation">{</span>
-  <span class="token-function">console</span><span class="token-punctuation">.</span><span class="token-function">log</span><span class="token-punctuation">(</span><span class="token-string">"✅ Valid portfolio!"</span><span class="token-punctuation">);</span>
-  <span class="token-comment">// Full TypeScript support</span>
-  <span class="token-keyword">const</span> <span class="token-variable">portfolio</span> <span class="token-operator">=</span> <span class="token-variable">result</span><span class="token-punctuation">.</span><span class="token-property">data</span><span class="token-punctuation">;</span>
-<span class="token-punctuation">}</span> <span class="token-keyword">else</span> <span class="token-punctuation">{</span>
-  <span class="token-function">console</span><span class="token-punctuation">.</span><span class="token-function">log</span><span class="token-punctuation">(</span><span class="token-string">"❌ Validation errors:"</span><span class="token-punctuation">,</span> <span class="token-variable">result</span><span class="token-punctuation">.</span><span class="token-property">errors</span><span class="token-punctuation">);</span>
 <span class="token-punctuation">}</span></code></pre>
 						</div>
 					</div>
 
-					<div class="tab-content" data-tab="skills">
-						<div class="code-block">
-							<div class="code-header">
-								<div class="code-title">skills-example.json</div>
+					<div class="tab-content hidden" data-tab="experience">
+						<div class="bg-slate-800 rounded-2xl overflow-hidden shadow-xl">
+							<div class="bg-slate-700 px-6 py-4 border-b border-slate-600">
+								<div class="text-slate-300 text-base font-medium">experience-example.json</div>
 							</div>
-							<pre><code class="mono"><span class="token-punctuation">{</span>
+							<pre class="p-8 overflow-x-auto bg-slate-800 text-base leading-relaxed text-slate-200 mono"><code><span class="token-punctuation">{</span>
+  <span class="token-property">"experience"</span><span class="token-punctuation">:</span> <span class="token-punctuation">[</span>
+    <span class="token-punctuation">{</span>
+      <span class="token-property">"company"</span><span class="token-punctuation">:</span> <span class="token-string">"TechCorp Inc."</span><span class="token-punctuation">,</span>
+      <span class="token-property">"position"</span><span class="token-punctuation">:</span> <span class="token-string">"Senior Full Stack Developer"</span><span class="token-punctuation">,</span>
+      <span class="token-property">"startDate"</span><span class="token-punctuation">:</span> <span class="token-string">"2021-06-01"</span><span class="token-punctuation">,</span>
+      <span class="token-property">"endDate"</span><span class="token-punctuation">:</span> <span class="token-string">"2024-07-28"</span><span class="token-punctuation">,</span>
+      <span class="token-property">"summary"</span><span class="token-punctuation">:</span> <span class="token-string">"Led development of scalable web applications..."</span><span class="token-punctuation">,</span>
+      <span class="token-property">"highlights"</span><span class="token-punctuation">:</span> <span class="token-punctuation">[</span>
+        <span class="token-string">"Increased application performance by 40%"</span><span class="token-punctuation">,</span>
+        <span class="token-string">"Mentored 5 junior developers"</span><span class="token-punctuation">,</span>
+        <span class="token-string">"Implemented CI/CD pipeline reducing deployment time by 60%"</span>
+      <span class="token-punctuation">]</span><span class="token-punctuation">,</span>
+      <span class="token-property">"technologies"</span><span class="token-punctuation">:</span> <span class="token-punctuation">[</span><span class="token-string">"React"</span><span class="token-punctuation">,</span> <span class="token-string">"Node.js"</span><span class="token-punctuation">,</span> <span class="token-string">"PostgreSQL"</span><span class="token-punctuation">,</span> <span class="token-string">"AWS"</span><span class="token-punctuation">]</span>
+    <span class="token-punctuation">}</span>
+  <span class="token-punctuation">]</span>
+<span class="token-punctuation">}</span></code></pre>
+						</div>
+					</div>
+
+					<div class="tab-content hidden" data-tab="skills">
+						<div class="bg-slate-800 rounded-2xl overflow-hidden shadow-xl">
+							<div class="bg-slate-700 px-6 py-4 border-b border-slate-600">
+								<div class="text-slate-300 text-base font-medium">skills-example.json</div>
+							</div>
+							<pre class="p-8 overflow-x-auto bg-slate-800 text-base leading-relaxed text-slate-200 mono"><code><span class="token-punctuation">{</span>
   <span class="token-property">"skills"</span><span class="token-punctuation">:</span> <span class="token-punctuation">[</span>
     <span class="token-punctuation">{</span>
       <span class="token-property">"name"</span><span class="token-punctuation">:</span> <span class="token-string">"TypeScript"</span><span class="token-punctuation">,</span>
@@ -267,12 +295,12 @@ import Layout from '../layouts/Layout.astro';
 						</div>
 					</div>
 
-					<div class="tab-content" data-tab="moocs">
-						<div class="code-block">
-							<div class="code-header">
-								<div class="code-title">moocs-example.json</div>
+					<div class="tab-content hidden" data-tab="moocs">
+						<div class="bg-slate-800 rounded-2xl overflow-hidden shadow-xl">
+							<div class="bg-slate-700 px-6 py-4 border-b border-slate-600">
+								<div class="text-slate-300 text-base font-medium">moocs-example.json</div>
 							</div>
-							<pre><code class="mono"><span class="token-punctuation">{</span>
+							<pre class="p-8 overflow-x-auto bg-slate-800 text-base leading-relaxed text-slate-200 mono"><code><span class="token-punctuation">{</span>
   <span class="token-property">"moocs"</span><span class="token-punctuation">:</span> <span class="token-punctuation">[</span>
     <span class="token-punctuation">{</span>
       <span class="token-property">"courseTitle"</span><span class="token-punctuation">:</span> <span class="token-string">"AWS Cloud Solutions Architect Specialization"</span><span class="token-punctuation">,</span>
@@ -295,12 +323,12 @@ import Layout from '../layouts/Layout.astro';
 						</div>
 					</div>
 
-					<div class="tab-content" data-tab="projects">
-						<div class="code-block">
-							<div class="code-header">
-								<div class="code-title">projects-example.json</div>
+					<div class="tab-content hidden" data-tab="projects">
+						<div class="bg-slate-800 rounded-2xl overflow-hidden shadow-xl">
+							<div class="bg-slate-700 px-6 py-4 border-b border-slate-600">
+								<div class="text-slate-300 text-base font-medium">projects-example.json</div>
 							</div>
-							<pre><code class="mono"><span class="token-punctuation">{</span>
+							<pre class="p-8 overflow-x-auto bg-slate-800 text-base leading-relaxed text-slate-200 mono"><code><span class="token-punctuation">{</span>
   <span class="token-property">"projects"</span><span class="token-punctuation">:</span> <span class="token-punctuation">[</span>
     <span class="token-punctuation">{</span>
       <span class="token-property">"name"</span><span class="token-punctuation">:</span> <span class="token-string">"E-Commerce Microservices Platform"</span><span class="token-punctuation">,</span>
@@ -328,19 +356,19 @@ import Layout from '../layouts/Layout.astro';
 		</section>
 
 		<!-- Installation -->
-		<section class="installation" id="installation">
-			<div class="container">
-				<div class="section-header">
-					<h2>Get Started in Minutes</h2>
-					<p>Install DevFolio JSON Schema and start building type-safe portfolios immediately</p>
+		<section class="py-32" id="installation">
+			<div class="max-w-6xl mx-auto px-6">
+				<div class="text-center mb-16">
+					<h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">Get Started in Minutes</h2>
+					<p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">Install DevFolio JSON Schema and start building type-safe portfolios immediately</p>
 				</div>
-				<div class="install-steps">
-					<div class="step">
-						<div class="step-number">1</div>
+				<div class="grid md:grid-cols-2 xl:grid-cols-3 gap-12 max-w-5xl mx-auto">
+					<div class="flex flex-col md:flex-row gap-6 items-start">
+						<div class="bg-purple-600 text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold flex-shrink-0">1</div>
 						<div class="step-content">
-							<h3>Install the Package</h3>
-							<div class="code-block">
-								<pre><code class="mono"><span class="token-comment"># npm</span>
+							<h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-4">Install the Package</h3>
+							<div class="bg-slate-800 rounded-2xl overflow-hidden shadow-lg mt-4">
+								<pre class="p-6 overflow-x-auto bg-slate-800 text-base leading-relaxed text-slate-200 mono"><code><span class="token-comment"># npm</span>
 <span class="token-function">npm install</span> devfolio-json-schema
 
 <span class="token-comment"># yarn</span>
@@ -351,31 +379,29 @@ import Layout from '../layouts/Layout.astro';
 							</div>
 						</div>
 					</div>
-					<div class="step">
-						<div class="step-number">2</div>
+					<div class="flex flex-col md:flex-row gap-6 items-start">
+						<div class="bg-purple-600 text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold flex-shrink-0">2</div>
 						<div class="step-content">
-							<h3>Import and Use</h3>
-							<div class="code-block">
-								<pre><code class="mono"><span class="token-import">import</span> <span class="token-punctuation">{</span>
-  <span class="token-variable">DevFolioSchema</span><span class="token-punctuation">,</span>
-  <span class="token-variable">validateDevFolio</span><span class="token-punctuation">,</span>
-  <span class="token-variable">type</span> <span class="token-variable">DevFolio</span>
-<span class="token-punctuation">}</span> <span class="token-import">from</span> <span class="token-string">'devfolio-json-schema'</span><span class="token-punctuation">;</span></code></pre>
+							<h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-4">Import and Use</h3>
+							<div class="bg-slate-800 rounded-2xl overflow-hidden shadow-lg mt-4">
+								<pre class="p-6 overflow-x-auto bg-slate-800 text-base leading-relaxed text-slate-200 mono"><code><span class="token-import">import</span> <span class="token-punctuation">{</span> <span class="token-variable">DevFolioSchema</span> <span class="token-punctuation">}</span> <span class="token-import">from</span> <span class="token-string">'devfolio-json-schema'</span><span class="token-punctuation">;</span>
+
+<span class="token-comment">// Validate your portfolio</span>
+<span class="token-keyword">const</span> <span class="token-variable">result</span> <span class="token-operator">=</span> <span class="token-function">DevFolioSchema</span><span class="token-punctuation">.</span><span class="token-function">safeParse</span><span class="token-punctuation">(</span><span class="token-variable">portfolio</span><span class="token-punctuation">)</span><span class="token-punctuation">;</span></code></pre>
 							</div>
 						</div>
 					</div>
-					<div class="step">
-						<div class="step-number">3</div>
+					<div class="flex flex-col md:flex-row gap-6 items-start">
+						<div class="bg-purple-600 text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold flex-shrink-0">3</div>
 						<div class="step-content">
-							<h3>Build Your Portfolio</h3>
-							<div class="code-block">
-								<pre><code class="mono"><span class="token-keyword">const</span> <span class="token-variable">myPortfolio</span><span class="token-punctuation">:</span> <span class="token-variable">DevFolio</span> <span class="token-operator">=</span> <span class="token-punctuation">{</span>
-  <span class="token-property">basics</span><span class="token-punctuation">:</span> <span class="token-punctuation">{</span>
-    <span class="token-property">name</span><span class="token-punctuation">:</span> <span class="token-string">"Your Name"</span><span class="token-punctuation">,</span>
-    <span class="token-property">label</span><span class="token-punctuation">:</span> <span class="token-string">"Your Title"</span>
-  <span class="token-punctuation">}</span>
-  <span class="token-comment">// Full TypeScript IntelliSense support!</span>
-<span class="token-punctuation">};</span></code></pre>
+							<h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-4">Build Your Portfolio</h3>
+							<div class="bg-slate-800 rounded-2xl overflow-hidden shadow-lg mt-4">
+								<pre class="p-6 overflow-x-auto bg-slate-800 text-base leading-relaxed text-slate-200 mono"><code><span class="token-comment">// Full TypeScript support</span>
+<span class="token-keyword">const</span> <span class="token-variable">portfolio</span><span class="token-punctuation">:</span> <span class="token-variable">DevFolioType</span> <span class="token-operator">=</span> <span class="token-punctuation">{</span>
+  <span class="token-property">basics</span><span class="token-punctuation">:</span> <span class="token-punctuation">{</span> <span class="token-operator">...</span> <span class="token-punctuation">}</span><span class="token-punctuation">,</span>
+  <span class="token-property">skills</span><span class="token-punctuation">:</span> <span class="token-punctuation">[</span> <span class="token-operator">...</span> <span class="token-punctuation">]</span><span class="token-punctuation">,</span>
+  <span class="token-comment">// Intellisense everywhere!</span>
+<span class="token-punctuation">}</span><span class="token-punctuation">;</span></code></pre>
 							</div>
 						</div>
 					</div>
@@ -384,64 +410,64 @@ import Layout from '../layouts/Layout.astro';
 		</section>
 
 		<!-- Comparison -->
-		<section class="comparison">
-			<div class="container">
-				<div class="section-header">
-					<h2>Why DevFolio Over Alternatives?</h2>
-					<p>See how DevFolio JSON Schema compares to other portfolio solutions</p>
+		<section class="py-32 bg-slate-50">
+			<div class="max-w-6xl mx-auto px-6">
+				<div class="text-center mb-16">
+					<h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">How We Compare</h2>
+					<p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">See why developers choose DevFolio JSON Schema over other solutions</p>
 				</div>
-				<div class="comparison-table">
-					<table>
+				<div class="overflow-x-auto -webkit-overflow-scrolling-touch rounded-2xl shadow-xl">
+					<table class="w-full min-w-[640px] bg-white rounded-2xl overflow-hidden">
 						<thead>
-							<tr>
-								<th>Feature</th>
-								<th>DevFolio JSON Schema</th>
-								<th>JSON Resume</th>
-								<th>Custom Solutions</th>
+							<tr class="bg-purple-600 text-white">
+								<th class="px-6 py-6 text-left font-semibold">Feature</th>
+								<th class="px-6 py-6 text-left font-semibold">DevFolio JSON Schema</th>
+								<th class="px-6 py-6 text-left font-semibold">JSON Resume</th>
+								<th class="px-6 py-6 text-left font-semibold">Custom Solutions</th>
 							</tr>
 						</thead>
 						<tbody>
-							<tr>
-								<td>TypeScript Support</td>
-								<td>✅ Full native support</td>
-								<td>❌ No built-in support</td>
-								<td>⚠️ Manual implementation</td>
+							<tr class="border-b border-gray-200">
+								<td class="px-6 py-6">TypeScript Support</td>
+								<td class="px-6 py-6">✅ Full native support</td>
+								<td class="px-6 py-6">❌ No built-in support</td>
+								<td class="px-6 py-6">⚠️ Manual implementation</td>
+							</tr>
+							<tr class="bg-slate-50 border-b border-gray-200">
+								<td class="px-6 py-6">Validation</td>
+								<td class="px-6 py-6">✅ Zod with detailed errors</td>
+								<td class="px-6 py-6">⚠️ JSON Schema only</td>
+								<td class="px-6 py-6">❌ Usually none</td>
+							</tr>
+							<tr class="border-b border-gray-200">
+								<td class="px-6 py-6">MOOC Support</td>
+								<td class="px-6 py-6">✅ First-class support</td>
+								<td class="px-6 py-6">❌ Not supported</td>
+								<td class="px-6 py-6">⚠️ Custom implementation</td>
+							</tr>
+							<tr class="bg-slate-50 border-b border-gray-200">
+								<td class="px-6 py-6">Modern Certifications</td>
+								<td class="px-6 py-6">✅ Expiry tracking, digital badges</td>
+								<td class="px-6 py-6">⚠️ Basic support</td>
+								<td class="px-6 py-6">⚠️ Usually limited</td>
+							</tr>
+							<tr class="border-b border-gray-200">
+								<td class="px-6 py-6">Skills Management</td>
+								<td class="px-6 py-6">✅ Advanced categorization</td>
+								<td class="px-6 py-6">⚠️ Basic list</td>
+								<td class="px-6 py-6">⚠️ Varies</td>
+							</tr>
+							<tr class="bg-slate-50 border-b border-gray-200">
+								<td class="px-6 py-6">Documentation</td>
+								<td class="px-6 py-6">✅ Comprehensive</td>
+								<td class="px-6 py-6">⚠️ Limited</td>
+								<td class="px-6 py-6">❌ Usually poor</td>
 							</tr>
 							<tr>
-								<td>Validation</td>
-								<td>✅ Zod with detailed errors</td>
-								<td>⚠️ JSON Schema only</td>
-								<td>❌ Usually none</td>
-							</tr>
-							<tr>
-								<td>MOOC Support</td>
-								<td>✅ First-class support</td>
-								<td>❌ Not supported</td>
-								<td>⚠️ Custom implementation</td>
-							</tr>
-							<tr>
-								<td>Modern Certifications</td>
-								<td>✅ Expiry tracking, digital badges</td>
-								<td>⚠️ Basic support</td>
-								<td>⚠️ Usually limited</td>
-							</tr>
-							<tr>
-								<td>Skills Management</td>
-								<td>✅ Advanced categorization</td>
-								<td>⚠️ Basic list</td>
-								<td>⚠️ Varies</td>
-							</tr>
-							<tr>
-								<td>Documentation</td>
-								<td>✅ Comprehensive</td>
-								<td>⚠️ Limited</td>
-								<td>❌ Usually poor</td>
-							</tr>
-							<tr>
-								<td>Maintenance</td>
-								<td>✅ Active development</td>
-								<td>⚠️ Slow updates</td>
-								<td>❌ Your responsibility</td>
+								<td class="px-6 py-6">Maintenance</td>
+								<td class="px-6 py-6">✅ Active development</td>
+								<td class="px-6 py-6">⚠️ Slow updates</td>
+								<td class="px-6 py-6">❌ Your responsibility</td>
 							</tr>
 						</tbody>
 					</table>
@@ -450,39 +476,37 @@ import Layout from '../layouts/Layout.astro';
 		</section>
 
 		<!-- CTA Section -->
-		<section class="cta">
-			<div class="container">
-				<div class="cta-content">
-					<h2>Ready to Build Better Portfolios?</h2>
-					<p>Join developers who are already using DevFolio JSON Schema to create standardized, type-safe portfolios.</p>
-					<div class="cta-actions">
-						<a href="https://github.com/AungMyoKyaw/devfolio-json-schema" class="btn btn-primary" target="_blank">
-							Get Started on GitHub
-						</a>
-						<a href="https://www.npmjs.com/package/devfolio-json-schema" class="btn btn-secondary" target="_blank">
-							View on NPM
-						</a>
-					</div>
+		<section class="py-32 hero-bg text-white text-center">
+			<div class="max-w-4xl mx-auto px-6">
+				<h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-6">Ready to Build Better Portfolios?</h2>
+				<p class="text-lg md:text-xl mb-10 opacity-90">Join developers who are already using DevFolio JSON Schema to create standardized, type-safe portfolios.</p>
+				<div class="flex flex-col sm:flex-row gap-4 justify-center">
+					<a href="https://github.com/AungMyoKyaw/devfolio-json-schema" class="bg-white text-purple-600 font-semibold px-8 py-4 rounded-lg inline-flex items-center gap-2 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg text-lg min-h-[48px] justify-center" target="_blank">
+						Get Started on GitHub
+					</a>
+					<a href="https://www.npmjs.com/package/devfolio-json-schema" class="bg-white/10 text-white font-semibold px-8 py-4 rounded-lg inline-flex items-center gap-2 border-2 border-white/30 backdrop-blur-sm transition-all duration-300 hover:bg-white/20 hover:border-white/50 text-lg min-h-[48px] justify-center" target="_blank">
+						View on NPM
+					</a>
 				</div>
 			</div>
 		</section>
 
 		<!-- Footer -->
-		<footer class="footer">
-			<div class="container">
-				<div class="footer-content">
+		<footer class="py-16 bg-gray-900 text-gray-300">
+			<div class="max-w-6xl mx-auto px-6">
+				<div class="grid md:grid-cols-2 gap-8 items-center">
 					<div class="footer-left">
-						<h3>DevFolio JSON Schema</h3>
-						<p>The complete TypeScript-first JSON schema for professional developer portfolios.</p>
-						<div class="footer-links">
-							<a href="https://github.com/AungMyoKyaw/devfolio-json-schema" target="_blank">GitHub</a>
-							<a href="https://www.npmjs.com/package/devfolio-json-schema" target="_blank">NPM</a>
-							<a href="https://github.com/AungMyoKyaw/devfolio-json-schema/blob/main/LICENSE" target="_blank">License</a>
+						<h3 class="text-2xl font-bold text-white mb-4">DevFolio JSON Schema</h3>
+						<p class="mb-6 opacity-80">The complete TypeScript-first JSON schema for professional developer portfolios.</p>
+						<div class="flex gap-6">
+							<a href="https://github.com/AungMyoKyaw/devfolio-json-schema" target="_blank" class="text-gray-400 hover:text-purple-400 transition-colors duration-300 px-3 py-2 min-h-[44px] flex items-center text-base">GitHub</a>
+							<a href="https://www.npmjs.com/package/devfolio-json-schema" target="_blank" class="text-gray-400 hover:text-purple-400 transition-colors duration-300 px-3 py-2 min-h-[44px] flex items-center text-base">NPM</a>
+							<a href="https://github.com/AungMyoKyaw/devfolio-json-schema/blob/main/LICENSE" target="_blank" class="text-gray-400 hover:text-purple-400 transition-colors duration-300 px-3 py-2 min-h-[44px] flex items-center text-base">License</a>
 						</div>
 					</div>
-					<div class="footer-right">
-						<p>Made with ❤️ by <a href="https://github.com/AungMyoKyaw" target="_blank">Aung Myo Kyaw</a></p>
-						<p>Licensed under MIT • Version 1.0.0-beta.0</p>
+					<div class="footer-right text-center md:text-right">
+						<p class="mb-2 opacity-80">Made with ❤️ by <a href="https://github.com/AungMyoKyaw" target="_blank" class="text-purple-400 hover:underline">Aung Myo Kyaw</a></p>
+						<p class="opacity-80">Licensed under MIT • Version 1.0.0-beta.0</p>
 					</div>
 				</div>
 			</div>
@@ -491,49 +515,15 @@ import Layout from '../layouts/Layout.astro';
 </Layout>
 
 <style>
-	/* Reset and Base Styles */
-	* {
-		margin: 0;
-		padding: 0;
-		box-sizing: border-box;
-	}
+	/* Essential custom classes only */
 
-	/* Layout Components */
-	.container {
-		max-width: 1200px;
-		margin: 0 auto;
-		padding: 0 1.5rem;
-	}
-
-	.section-header {
-		text-align: center;
-		margin-bottom: 4rem;
-	}
-
-	.section-header h2 {
-		font-size: 2.5rem;
-		font-weight: 700;
-		color: #1a1a1a;
-		margin-bottom: 1rem;
-	}
-
-	.section-header p {
-		font-size: 1.2rem;
-		color: #6b7280;
-		max-width: 600px;
-		margin: 0 auto;
-	}
-
-	/* Hero Section */
-	.hero {
-		padding: 6rem 0 8rem;
+	/* Hero background gradient */
+	.hero-bg {
 		background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-		color: white;
-		position: relative;
-		overflow: hidden;
 	}
 
-	.hero::before {
+	/* Hero pattern overlay */
+	.hero-pattern::before {
 		content: '';
 		position: absolute;
 		top: 0;
@@ -544,39 +534,7 @@ import Layout from '../layouts/Layout.astro';
 		opacity: 0.3;
 	}
 
-	.hero .container {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		gap: 4rem;
-		align-items: center;
-		position: relative;
-		z-index: 1;
-	}
-
-	.hero-badge {
-		display: flex;
-		gap: 0.5rem;
-		margin-bottom: 2rem;
-		flex-wrap: wrap;
-	}
-
-	.badge {
-		background: rgba(255, 255, 255, 0.2);
-		backdrop-filter: blur(10px);
-		padding: 0.5rem 1rem;
-		border-radius: 50px;
-		font-size: 0.875rem;
-		font-weight: 500;
-		border: 1px solid rgba(255, 255, 255, 0.3);
-	}
-
-	.hero-title {
-		font-size: 3.5rem;
-		font-weight: 800;
-		line-height: 1.1;
-		margin-bottom: 1.5rem;
-	}
-
+	/* Gradient text for hero title */
 	.gradient-text {
 		background: linear-gradient(135deg, #fbbf24, #f59e0b);
 		-webkit-background-clip: text;
@@ -584,143 +542,12 @@ import Layout from '../layouts/Layout.astro';
 		background-clip: text;
 	}
 
-	.hero-description {
-		font-size: 1.25rem;
-		line-height: 1.6;
-		margin-bottom: 2rem;
-		opacity: 0.9;
+	/* Monospace font */
+	.mono {
+		font-family: 'JetBrains Mono', monospace;
 	}
 
-	.hero-actions {
-		display: flex;
-		gap: 1rem;
-		margin-bottom: 3rem;
-		flex-wrap: wrap;
-	}
-
-	.btn {
-		padding: 1rem 2rem;
-		border-radius: 0.75rem;
-		font-weight: 600;
-		text-decoration: none;
-		display: inline-flex;
-		align-items: center;
-		gap: 0.5rem;
-		transition: all 0.3s ease;
-		font-size: 1.1rem;
-	}
-
-	.btn-primary {
-		background: #ffffff;
-		color: #667eea;
-		box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-	}
-
-	.btn-primary:hover {
-		transform: translateY(-2px);
-		box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
-	}
-
-	.btn-secondary {
-		background: rgba(255, 255, 255, 0.1);
-		color: white;
-		border: 2px solid rgba(255, 255, 255, 0.3);
-		backdrop-filter: blur(10px);
-	}
-
-	.btn-secondary:hover {
-		background: rgba(255, 255, 255, 0.2);
-		border-color: rgba(255, 255, 255, 0.5);
-	}
-
-	.hero-stats {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		gap: 2rem;
-		margin-bottom: 0.5rem;
-	}
-
-	.stat {
-		text-align: center;
-	}
-
-	.stat-number {
-		font-size: 2rem;
-		font-weight: 800;
-		margin-bottom: 0.25rem;
-	}
-
-	.stat-label {
-		font-size: 0.875rem;
-		opacity: 0.8;
-	}
-
-	.dependency-note {
-		font-size: 0.75rem;
-		opacity: 0.7;
-		text-align: center;
-	}
-
-	.hero-visual {
-		display: flex;
-		justify-content: center;
-	}
-
-	.code-preview {
-		background: #1e293b;
-		border-radius: 1rem;
-		overflow: hidden;
-		box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-		max-width: 100%;
-		width: 100%;
-		min-width: 300px;
-	}
-
-	.code-header {
-		display: flex;
-		align-items: center;
-		padding: 1rem 1.5rem;
-		background: #334155;
-		border-bottom: 1px solid #475569;
-	}
-
-	.code-dots {
-		display: flex;
-		gap: 0.5rem;
-		margin-right: 1rem;
-	}
-
-	.code-dots span {
-		width: 12px;
-		height: 12px;
-		border-radius: 50%;
-		background: #64748b;
-	}
-
-	.code-dots span:nth-child(1) { background: #ef4444; }
-	.code-dots span:nth-child(2) { background: #f59e0b; }
-	.code-dots span:nth-child(3) { background: #10b981; }
-
-	.code-title {
-		color: #e2e8f0;
-		font-size: 0.875rem;
-		font-weight: 500;
-	}
-
-	.code-content {
-		padding: 1.5rem;
-		background: #1e293b;
-		overflow-x: auto;
-	}
-
-	.code-content pre {
-		margin: 0;
-		font-size: 0.875rem;
-		line-height: 1.5;
-		color: #e2e8f0;
-	}
-
-	/* Token Styles */
+	/* Syntax highlighting tokens */
 	.token-import { color: #c084fc; }
 	.token-keyword { color: #c084fc; }
 	.token-variable { color: #60a5fa; }
@@ -731,618 +558,6 @@ import Layout from '../layouts/Layout.astro';
 	.token-property { color: #f472b6; }
 	.token-operator { color: #e2e8f0; }
 	.token-function { color: #a78bfa; }
-
-	/* Features Section */
-	.features {
-		padding: 8rem 0;
-		background: #f8fafc;
-	}
-
-	.features-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-		gap: 2rem;
-	}
-
-	.feature-card {
-		background: white;
-		padding: 2.5rem;
-		border-radius: 1rem;
-		box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-		transition: transform 0.3s ease, box-shadow 0.3s ease;
-	}
-
-	.feature-card:hover {
-		transform: translateY(-5px);
-		box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
-	}
-
-	.feature-icon {
-		font-size: 3rem;
-		margin-bottom: 1.5rem;
-	}
-
-	.feature-card h3 {
-		font-size: 1.5rem;
-		font-weight: 700;
-		color: #1a1a1a;
-		margin-bottom: 1rem;
-	}
-
-	.feature-card p {
-		color: #6b7280;
-		line-height: 1.7;
-	}
-
-	/* Schema Sections */
-	.schema-sections {
-		padding: 8rem 0;
-	}
-
-	.sections-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-		gap: 3rem;
-	}
-
-	.section-category h3 {
-		font-size: 1.5rem;
-		font-weight: 700;
-		color: #667eea;
-		margin-bottom: 1.5rem;
-		padding-bottom: 0.5rem;
-		border-bottom: 2px solid #e5e7eb;
-	}
-
-	.section-items {
-		display: flex;
-		flex-direction: column;
-		gap: 1rem;
-	}
-
-	.section-item {
-		padding: 1rem;
-		background: #f8fafc;
-		border-radius: 0.5rem;
-		border-left: 4px solid #667eea;
-	}
-
-	.section-item strong {
-		color: #667eea;
-		font-family: 'JetBrains Mono', monospace;
-	}
-
-	/* Code Examples */
-	.code-examples {
-		padding: 8rem 0;
-		background: #f8fafc;
-	}
-
-	.examples-tabs {
-		max-width: 900px;
-		margin: 0 auto;
-	}
-
-	.tab-buttons {
-		display: flex;
-		gap: 0.5rem;
-		margin-bottom: 2rem;
-		flex-wrap: wrap;
-		justify-content: center;
-	}
-
-	.tab-button {
-		padding: 0.75rem 1.5rem;
-		border: none;
-		background: #e5e7eb;
-		color: #6b7280;
-		border-radius: 0.5rem;
-		font-weight: 500;
-		cursor: pointer;
-		transition: all 0.3s ease;
-	}
-
-	.tab-button.active {
-		background: #667eea;
-		color: white;
-	}
-
-	.tab-button:hover:not(.active) {
-		background: #d1d5db;
-	}
-
-	.tab-content {
-		display: none;
-	}
-
-	.tab-content.active {
-		display: block;
-	}
-
-	.code-block {
-		background: #1e293b;
-		border-radius: 1rem;
-		overflow: hidden;
-		box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
-	}
-
-	.code-block .code-header {
-		background: #334155;
-		padding: 1rem 1.5rem;
-		border-bottom: 1px solid #475569;
-	}
-
-	.code-block pre {
-		margin: 0;
-		padding: 2rem;
-		overflow-x: auto;
-		background: #1e293b;
-		font-size: 0.875rem;
-		line-height: 1.6;
-		color: #e2e8f0;
-	}
-
-	/* Installation */
-	.installation {
-		padding: 8rem 0;
-	}
-
-	.install-steps {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-		gap: 3rem;
-		max-width: 1000px;
-		margin: 0 auto;
-	}
-
-	.step {
-		display: flex;
-		gap: 1.5rem;
-		align-items: flex-start;
-	}
-
-	.step-number {
-		background: #667eea;
-		color: white;
-		width: 3rem;
-		height: 3rem;
-		border-radius: 50%;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		font-weight: 700;
-		font-size: 1.25rem;
-		flex-shrink: 0;
-	}
-
-	.step-content h3 {
-		font-size: 1.25rem;
-		font-weight: 700;
-		color: #1a1a1a;
-		margin-bottom: 1rem;
-	}
-
-	.step .code-block {
-		margin-top: 1rem;
-	}
-
-	/* Comparison */
-	.comparison {
-		padding: 8rem 0;
-		background: #f8fafc;
-	}
-
-	.comparison-table {
-		max-width: 900px;
-		margin: 0 auto;
-		overflow-x: auto;
-		-webkit-overflow-scrolling: touch;
-		border-radius: 1rem;
-		box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
-	}
-
-	.comparison-table table {
-		width: 100%;
-		min-width: 600px;
-		background: white;
-		border-radius: 1rem;
-		overflow: hidden;
-	}
-
-	.comparison-table th,
-	.comparison-table td {
-		padding: 1.5rem;
-		text-align: left;
-		border-bottom: 1px solid #e5e7eb;
-	}
-
-	.comparison-table th {
-		background: #667eea;
-		color: white;
-		font-weight: 600;
-	}
-
-	.comparison-table tr:last-child td {
-		border-bottom: none;
-	}
-
-	.comparison-table tr:nth-child(even) {
-		background: #f8fafc;
-	}
-
-	/* CTA */
-	.cta {
-		padding: 8rem 0;
-		background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-		color: white;
-		text-align: center;
-	}
-
-	.cta-content h2 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin-bottom: 1.5rem;
-	}
-
-	.cta-content p {
-		font-size: 1.25rem;
-		margin-bottom: 2.5rem;
-		opacity: 0.9;
-	}
-
-	.cta-actions {
-		display: flex;
-		gap: 1rem;
-		justify-content: center;
-		flex-wrap: wrap;
-	}
-
-	/* Footer */
-	.footer {
-		padding: 4rem 0 2rem;
-		background: #1a1a1a;
-		color: #e5e7eb;
-	}
-
-	.footer-content {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		gap: 2rem;
-		align-items: center;
-	}
-
-	.footer-left h3 {
-		font-size: 1.5rem;
-		font-weight: 700;
-		margin-bottom: 1rem;
-		color: white;
-	}
-
-	.footer-left p {
-		margin-bottom: 1.5rem;
-		opacity: 0.8;
-	}
-
-	.footer-links {
-		display: flex;
-		gap: 1.5rem;
-	}
-
-	.footer-links a {
-		color: #9ca3af;
-		text-decoration: none;
-		transition: color 0.3s ease;
-	}
-
-	.footer-links a:hover {
-		color: #667eea;
-	}
-
-	.footer-right {
-		text-align: right;
-	}
-
-	.footer-right p {
-		margin-bottom: 0.5rem;
-		opacity: 0.8;
-	}
-
-	.footer-right a {
-		color: #667eea;
-		text-decoration: none;
-	}
-
-	.footer-right a:hover {
-		text-decoration: underline;
-	}
-
-	/* Mobile Responsiveness */
-	@media (max-width: 768px) {
-		body {
-			overflow-x: hidden;
-		}
-
-		.hero .container {
-			grid-template-columns: 1fr;
-			gap: 3rem;
-			text-align: center;
-		}
-
-		.hero-title {
-			font-size: 2.5rem;
-		}
-
-		.hero-stats {
-			grid-template-columns: repeat(3, 1fr);
-			gap: 1rem;
-		}
-
-		.section-header h2 {
-			font-size: 2rem;
-		}
-
-		.section-header p {
-			font-size: 1.1rem;
-		}
-
-		.features-grid,
-		.sections-grid {
-			grid-template-columns: 1fr;
-		}
-
-		.install-steps {
-			grid-template-columns: 1fr;
-		}
-
-		.step {
-			flex-direction: column;
-			text-align: center;
-		}
-
-		.comparison-table {
-			font-size: 1rem;
-			overflow-x: auto;
-			-webkit-overflow-scrolling: touch;
-		}
-
-		.comparison-table th,
-		.comparison-table td {
-			padding: 1rem;
-			min-width: 120px;
-		}
-
-		.cta-content h2 {
-			font-size: 2rem;
-		}
-
-		.footer-content {
-			grid-template-columns: 1fr;
-			text-align: center;
-			gap: 2rem;
-		}
-
-		.footer-right {
-			text-align: center;
-		}
-
-		.tab-buttons {
-			justify-content: flex-start;
-			overflow-x: auto;
-			padding-bottom: 0.5rem;
-		}
-
-		.tab-button {
-			min-height: 44px;
-			padding: 0.875rem 1.5rem;
-			font-size: 1rem;
-		}
-
-		.code-content pre {
-			font-size: 1rem;
-		}
-
-		.btn {
-			min-height: 44px;
-			padding: 1rem 2rem;
-			font-size: 1rem;
-		}
-
-		.code-title {
-			font-size: 1rem;
-		}
-
-		.stat-label {
-			font-size: 1rem;
-		}
-
-		.dependency-note {
-			font-size: 1rem;
-		}
-
-		.badge {
-			font-size: 1rem;
-		}
-
-		.footer-links a {
-			padding: 0.5rem;
-			min-height: 44px;
-			display: inline-flex;
-			align-items: center;
-		}
-	}
-
-	@media (max-width: 480px) {
-		.container {
-			padding: 0 1rem;
-		}
-
-		.hero {
-			padding: 4rem 0 6rem;
-		}
-
-		.hero-title {
-			font-size: 2rem;
-		}
-
-		.hero-description {
-			font-size: 1.1rem;
-		}
-
-		.btn {
-			min-height: 44px;
-			padding: 1rem 1.5rem;
-			font-size: 1rem;
-		}
-
-		.feature-card {
-			padding: 2rem;
-		}
-
-		.features,
-		.schema-sections,
-		.code-examples,
-		.installation,
-		.comparison,
-		.cta {
-			padding: 4rem 0;
-		}
-
-		.tab-button {
-			min-height: 44px;
-			padding: 0.875rem 1.5rem;
-			font-size: 1rem;
-		}
-
-		.code-content pre {
-			font-size: 1rem;
-			padding: 1.5rem;
-			overflow-x: auto;
-			-webkit-overflow-scrolling: touch;
-		}
-
-		.code-preview {
-			min-width: 280px;
-		}
-
-		.comparison-table {
-			font-size: 1rem;
-		}
-
-		.comparison-table th,
-		.comparison-table td {
-			padding: 0.875rem;
-			min-width: 100px;
-		}
-
-		.dependency-note {
-			font-size: 1rem;
-		}
-
-		.code-title {
-			font-size: 1rem;
-		}
-
-		.stat-label {
-			font-size: 1rem;
-		}
-	}
-
-	/* iPhone SE and smaller devices */
-	@media (max-width: 320px) {
-		.code-preview {
-			min-width: 280px;
-			max-width: 100%;
-		}
-
-		.hero-title {
-			font-size: 1.75rem;
-		}
-
-		.hero-actions {
-			flex-direction: column;
-			align-items: center;
-		}
-
-		.btn {
-			width: 100%;
-			max-width: 280px;
-			min-height: 44px;
-			justify-content: center;
-		}
-
-		.tab-button {
-			min-width: 80px;
-			min-height: 44px;
-		}
-
-		.hero-stats {
-			gap: 0.5rem;
-		}
-
-		.stat-number {
-			font-size: 1.5rem;
-		}
-
-		.comparison-table th,
-		.comparison-table td {
-			padding: 0.75rem;
-			font-size: 1rem;
-			min-width: 90px;
-		}
-
-		.code-content {
-			padding: 1rem;
-		}
-
-		.code-content pre {
-			font-size: 1rem;
-			line-height: 1.4;
-		}
-
-		.code-block pre {
-			font-size: 1rem;
-		}
-
-		.badge {
-			font-size: 1rem;
-		}
-
-		.footer-links a {
-			font-size: 1rem;
-			padding: 0.75rem;
-			min-height: 44px;
-			display: inline-flex;
-			align-items: center;
-		}
-
-		/* Desktop font and target fixes */
-		.dependency-note {
-			font-size: 14px !important;
-		}
-
-		.tab-button {
-			font-size: 14px !important;
-			padding: 12px 16px !important;
-			min-height: 44px !important;
-		}
-
-		footer a {
-			font-size: 16px !important;
-			padding: 8px 12px !important;
-			min-height: 32px !important;
-			display: inline-block;
-		}
-
-		/* Global fixes for remaining desktop issues */
-		* {
-			min-font-size: 14px !important;
-		}
-
-		button, a, input, [onclick], [role="button"] {
-			min-height: 32px !important;
-			padding: 8px 12px !important;
-		}
-	}
 </style>
 
 <script>
@@ -1356,12 +571,23 @@ import Layout from '../layouts/Layout.astro';
 				const tabId = button.getAttribute('data-tab');
 
 				// Remove active class from all buttons and contents
-				tabButtons.forEach(btn => btn.classList.remove('active'));
-				tabContents.forEach(content => content.classList.remove('active'));
+				tabButtons.forEach(btn => {
+					btn.classList.remove('active', 'bg-purple-600', 'text-white');
+					btn.classList.add('bg-gray-200', 'text-gray-700');
+				});
+				tabContents.forEach(content => {
+					content.classList.remove('active');
+					content.classList.add('hidden');
+				});
 
 				// Add active class to clicked button and corresponding content
-				button.classList.add('active');
-				document.querySelector(`[data-tab="${tabId}"].tab-content`).classList.add('active');
+				button.classList.remove('bg-gray-200', 'text-gray-700');
+				button.classList.add('active', 'bg-purple-600', 'text-white');
+				const targetContent = document.querySelector(`[data-tab="${tabId}"].tab-content`);
+				if (targetContent) {
+					targetContent.classList.remove('hidden');
+					targetContent.classList.add('active');
+				}
 			});
 		});
 	});
