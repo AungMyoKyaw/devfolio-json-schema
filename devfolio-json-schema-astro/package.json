@@ -1,7 +1,11 @@
 {
   "name": "devfolio-json-schema-astro",
   "type": "module",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "description": "Official product page for DevFolio JSON Schema - A comprehensive TypeScript-first JSON schema for professional developer portfolios",
+  "keywords": ["devfolio", "json-schema", "portfolio", "typescript", "astro", "product-page"],
+  "author": "Aung Myo Kyaw",
+  "license": "MIT",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",

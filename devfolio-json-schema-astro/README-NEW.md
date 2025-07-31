@@ -59,7 +59,7 @@ This product page follows world-class UI/UX design principles:
 ## 🚀 Getting Started
 
 ### Prerequisites
-- Node.js 16+ 
+- Node.js 16+
 - npm, yarn, or pnpm
 
 ### Installation
@@ -98,7 +98,7 @@ The product page is fully responsive and optimized for:
 
 - **Static Site Generation** for fast loading
 - **Optimized Images** and assets
-- **Minimal JavaScript** for better performance  
+- **Minimal JavaScript** for better performance
 - **CSS Grid/Flexbox** for efficient layouts
 - **Font Loading Optimization** with preconnect hints
 

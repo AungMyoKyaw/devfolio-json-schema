@@ -2,6 +2,12 @@
 
 A comprehensive TypeScript-first JSON schema for professional developer portfolios with Zod validation. This schema provides a standardized way to represent all aspects of a developer's professional profile, from basic information to complex project details and certifications.
 
+## 🌐 Product Page
+
+**[View the complete product page with live examples →](./devfolio-json-schema-astro/)**
+
+The interactive product page showcases all features, provides code examples, and includes comprehensive documentation. Built with Astro for optimal performance.
+
 ## 🚀 Features
 
 - **TypeScript-First**: Built with Zod for full type safety and inference
