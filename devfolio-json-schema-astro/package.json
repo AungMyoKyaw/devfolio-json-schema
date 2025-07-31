@@ -3,7 +3,14 @@
   "type": "module",
   "version": "1.0.0",
   "description": "Official product page for DevFolio JSON Schema - A comprehensive TypeScript-first JSON schema for professional developer portfolios",
-  "keywords": ["devfolio", "json-schema", "portfolio", "typescript", "astro", "product-page"],
+  "keywords": [
+    "devfolio",
+    "json-schema",
+    "portfolio",
+    "typescript",
+    "astro",
+    "product-page"
+  ],
   "author": "Aung Myo Kyaw",
   "license": "MIT",
   "scripts": {
@@ -13,6 +20,8 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.12.6"
+    "@tailwindcss/vite": "^4.1.11",
+    "astro": "^5.12.6",
+    "tailwindcss": "^4.1.11"
   }
 }
