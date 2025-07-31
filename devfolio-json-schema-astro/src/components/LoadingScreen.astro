@@ -1,46 +1,50 @@
 ---
-import { Loader2 } from 'lucide-astro';
+import { Loader2 } from "lucide-astro";
 ---
 
 <div
-	id="loading-overlay"
-	class="fixed inset-0 bg-gradient-to-br from-purple-600 to-blue-600 flex items-center justify-center z-50 transition-opacity duration-500 p-4"
+  id="loading-overlay"
+  class="fixed inset-0 bg-gradient-to-br from-purple-600 to-blue-600 flex items-center justify-center z-50 transition-opacity duration-500 p-4"
 >
-	<div class="text-center text-white max-w-sm mx-auto">
-		<div class="mb-4 sm:mb-6">
-			<Loader2 size={36} class="animate-spin mx-auto sm:w-12 sm:h-12" />
-		</div>
-		<h3 class="text-xl sm:text-2xl lg:text-3xl font-bold mb-2 sm:mb-4">DevFolio JSON Schema</h3>
-		<p class="text-purple-200 text-sm sm:text-base leading-relaxed">Loading your perfect portfolio schema...</p>
-	</div>
+  <div class="text-center text-white max-w-sm mx-auto">
+    <div class="mb-4 sm:mb-6">
+      <Loader2 size={36} class="animate-spin mx-auto sm:w-12 sm:h-12" />
+    </div>
+    <h3 class="text-xl sm:text-2xl lg:text-3xl font-bold mb-2 sm:mb-4">
+      DevFolio JSON Schema
+    </h3>
+    <p class="text-purple-200 text-sm sm:text-base leading-relaxed">
+      Loading your perfect portfolio schema...
+    </p>
+  </div>
 </div>
 
 <script>
-	document.addEventListener('DOMContentLoaded', function() {
-		const loadingOverlay = document.getElementById('loading-overlay');
+  document.addEventListener("DOMContentLoaded", function () {
+    const loadingOverlay = document.getElementById("loading-overlay");
 
-		// Hide loading after page is fully loaded
-		window.addEventListener('load', function() {
-			setTimeout(function() {
-				if (loadingOverlay) {
-					loadingOverlay.classList.add('opacity-0');
-					setTimeout(function() {
-						loadingOverlay.style.display = 'none';
-					}, 500);
-				}
-			}, 800); // Show loading for at least 800ms for smooth experience
-		});
-	});
+    // Hide loading after page is fully loaded
+    window.addEventListener("load", function () {
+      setTimeout(function () {
+        if (loadingOverlay) {
+          loadingOverlay.classList.add("opacity-0");
+          setTimeout(function () {
+            loadingOverlay.style.display = "none";
+          }, 500);
+        }
+      }, 800); // Show loading for at least 800ms for smooth experience
+    });
+  });
 </script>
 
 <style>
-	@keyframes spin {
-		to {
-			transform: rotate(360deg);
-		}
-	}
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
 
-	.animate-spin {
-		animation: spin 1s linear infinite;
-	}
+  .animate-spin {
+    animation: spin 1s linear infinite;
+  }
 </style>
