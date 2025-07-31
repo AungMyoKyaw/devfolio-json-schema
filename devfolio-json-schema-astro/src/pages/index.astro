@@ -31,7 +31,7 @@ import {
 	<main>
 		<!-- Hero Section -->
 		<section class="hero-bg hero-pattern relative pt-24 pb-32 text-white overflow-hidden">
-			<div class="max-w-7xl mx-auto px-4 sm:px-6 grid lg:grid-cols-2 gap-8 lg:gap-16 items-center relative z-10">
+			<div class="max-w-7xl 2xl:max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 2xl:px-12 grid lg:grid-cols-2 gap-8 lg:gap-16 2xl:gap-24 items-center relative z-10">
 				<div class="text-center lg:text-left w-full min-w-0">
 					<div class="flex flex-wrap gap-2 sm:gap-3 mb-6 sm:mb-8 justify-center lg:justify-start">
 						<span class="bg-white/20 backdrop-blur-md px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-medium border border-white/30 whitespace-nowrap">TypeScript Ready</span>
@@ -50,13 +50,13 @@ import {
 						<a href="https://github.com/AungMyoKyaw/devfolio-json-schema"
 							class="bg-white text-purple-600 font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-lg inline-flex items-center gap-3 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl text-base sm:text-lg min-h-[48px] justify-center w-full sm:w-auto"
 							target="_blank">
-							<Github size={20} />
+							<Github size={20} aria-label="GitHub icon" />
 							Get Started on GitHub
 						</a>
 						<a href="https://www.npmjs.com/package/devfolio-json-schema"
 							class="bg-white/10 text-white font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-lg inline-flex items-center gap-3 border-2 border-white/30 backdrop-blur-sm transition-all duration-300 hover:bg-white/20 hover:border-white/50 text-base sm:text-lg min-h-[48px] justify-center w-full sm:w-auto"
 							target="_blank">
-							<Package size={20} />
+							<Package size={20} aria-label="NPM package icon" />
 							View on NPM
 						</a>
 					</div>
@@ -86,8 +86,8 @@ import {
 							</div>
 							<div class="text-slate-300 text-sm font-medium">portfolio.ts</div>
 						</div>
-						<div class="p-4 sm:p-6 overflow-x-auto min-w-0">
-							<pre class="text-xs sm:text-sm leading-relaxed text-slate-200 mono min-w-0 whitespace-pre-wrap break-all"><code class="break-all whitespace-pre-wrap"><span class="token-import">import</span> <span class="token-punctuation">{</span> <span class="token-variable">DevFolioSchema</span> <span class="token-punctuation">}</span> <span class="token-import">from</span> <span class="token-string">'devfolio-json-schema'</span><span class="token-punctuation">;</span>
+						<div class="p-4 sm:p-6 xl:p-8 overflow-x-auto min-w-0">
+							<pre class="text-xs sm:text-sm xl:text-base leading-relaxed text-slate-200 mono min-w-0 whitespace-pre-wrap break-words overflow-wrap-anywhere"><code class="break-words whitespace-pre-wrap overflow-wrap-anywhere"><span class="token-import">import</span> <span class="token-punctuation">{</span> <span class="token-variable">DevFolioSchema</span> <span class="token-punctuation">}</span> <span class="token-import">from</span> <span class="token-string">'devfolio-json-schema'</span><span class="token-punctuation">;</span>
 
 <span class="token-comment">// Your portfolio data with full TypeScript support</span>
 <span class="token-keyword">const</span> <span class="token-variable">portfolio</span> <span class="token-operator">=</span> <span class="token-punctuation">{</span>
@@ -111,7 +111,7 @@ import {
 
 		<!-- Features Section -->
 		<section class="py-32 bg-slate-50">
-			<div class="max-w-6xl mx-auto px-6">
+			<div class="max-w-6xl 2xl:max-w-screen-xl mx-auto px-6 lg:px-8 2xl:px-12">
 				<div class="text-center mb-16">
 					<h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">Why Choose DevFolio JSON Schema?</h2>
 					<p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">Modern developer portfolios need modern solutions. Built with TypeScript, validated with Zod, and designed for the future.</p>
@@ -119,42 +119,42 @@ import {
 				<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 					<div class="bg-white p-8 rounded-2xl shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
 						<div class="text-purple-600 mb-6">
-							<Code size={32} />
+							<Code size={32} aria-label="Code icon representing TypeScript development" />
 						</div>
 						<h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-4">TypeScript First</h3>
 						<p class="text-gray-600 leading-relaxed">Built from the ground up with TypeScript. Get full intellisense, type safety, and compile-time validation for your portfolio data.</p>
 					</div>
 					<div class="bg-white p-8 rounded-2xl shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
 						<div class="text-purple-600 mb-6">
-							<CheckCircle size={32} />
+							<CheckCircle size={32} aria-label="Check circle icon representing Zod validation" />
 						</div>
 						<h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-4">Zod Validation</h3>
 						<p class="text-gray-600 leading-relaxed">Powered by Zod for runtime type checking and detailed error messages. Catch data issues before they become problems.</p>
 					</div>
 					<div class="bg-white p-8 rounded-2xl shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
 						<div class="text-purple-600 mb-6">
-							<GraduationCap size={32} />
+							<GraduationCap size={32} aria-label="Graduation cap icon representing MOOC support" />
 						</div>
 						<h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-4">MOOC Support</h3>
 						<p class="text-gray-600 leading-relaxed">First-class support for online courses, certifications, and modern learning platforms like Coursera, edX, and Udemy.</p>
 					</div>
 					<div class="bg-white p-8 rounded-2xl shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
 						<div class="text-purple-600 mb-6">
-							<Briefcase size={32} />
+							<Briefcase size={32} aria-label="Briefcase icon representing professional ready features" />
 						</div>
 						<h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-4">Professional Ready</h3>
 						<p class="text-gray-600 leading-relaxed">Comprehensive fields for work experience, skills assessment, and professional achievements that recruiters want to see.</p>
 					</div>
 					<div class="bg-white p-8 rounded-2xl shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
 						<div class="text-purple-600 mb-6">
-							<Smartphone size={32} />
+							<Smartphone size={32} aria-label="Smartphone icon representing modern web features" />
 						</div>
 						<h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-4">Modern Web</h3>
 						<p class="text-gray-600 leading-relaxed">Support for social profiles, digital portfolios, and modern web presence including GitHub, LinkedIn, and personal websites.</p>
 					</div>
 					<div class="bg-white p-8 rounded-2xl shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
 						<div class="text-purple-600 mb-6">
-							<Zap size={32} />
+							<Zap size={32} aria-label="Lightning bolt icon representing zero dependencies" />
 						</div>
 						<h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-4">Zero Dependencies</h3>
 						<p class="text-gray-600 leading-relaxed">No runtime dependencies means smaller bundle sizes and fewer security concerns. Pure TypeScript with optional Zod validation.</p>
@@ -165,7 +165,7 @@ import {
 
 		<!-- Schema Sections -->
 		<section class="py-32">
-			<div class="max-w-6xl mx-auto px-6">
+			<div class="max-w-6xl 2xl:max-w-screen-xl mx-auto px-6 lg:px-8 2xl:px-12">
 				<div class="text-center mb-16">
 					<h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">Complete Schema Coverage</h2>
 					<p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">Every aspect of your professional profile, organized and validated</p>
@@ -173,7 +173,7 @@ import {
 				<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
 					<div class="section-category">
 						<div class="flex items-center gap-3 mb-6 pb-2 border-b-2 border-gray-200">
-							<Database size={24} class="text-purple-600" />
+							<Database size={24} class="text-purple-600" aria-label="Database icon representing core information" />
 							<h3 class="text-xl md:text-2xl font-bold text-purple-600">Core Information</h3>
 						</div>
 						<div class="space-y-4">
@@ -193,7 +193,7 @@ import {
 					</div>
 					<div class="section-category">
 						<div class="flex items-center gap-3 mb-6 pb-2 border-b-2 border-gray-200">
-							<Settings size={24} class="text-purple-600" />
+							<Settings size={24} class="text-purple-600" aria-label="Settings icon representing skills and expertise" />
 							<h3 class="text-xl md:text-2xl font-bold text-purple-600">Skills & Expertise</h3>
 						</div>
 						<div class="space-y-4">
@@ -213,7 +213,7 @@ import {
 					</div>
 					<div class="section-category">
 						<div class="flex items-center gap-3 mb-6 pb-2 border-b-2 border-gray-200">
-							<Award size={24} class="text-purple-600" />
+							<Award size={24} class="text-purple-600" aria-label="Award icon representing additional sections" />
 							<h3 class="text-xl md:text-2xl font-bold text-purple-600">Additional Sections</h3>
 						</div>
 						<div class="space-y-4">
@@ -230,7 +230,7 @@ import {
 					</div>
 					<div class="section-category">
 						<div class="flex items-center gap-3 mb-6 pb-2 border-b-2 border-gray-200">
-							<BookOpen size={24} class="text-purple-600" />
+							<BookOpen size={24} class="text-purple-600" aria-label="Book open icon representing advanced sections" />
 							<h3 class="text-xl md:text-2xl font-bold text-purple-600">Advanced Sections</h3>
 						</div>
 						<div class="space-y-4">
@@ -251,7 +251,7 @@ import {
 
 		<!-- Code Examples -->
 		<section class="py-32 bg-slate-50">
-			<div class="max-w-5xl mx-auto px-6">
+			<div class="max-w-5xl 2xl:max-w-screen-lg mx-auto px-6 lg:px-8 2xl:px-12">
 				<div class="text-center mb-16">
 					<h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">See It In Action</h2>
 					<p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">Explore different sections of the schema with real examples</p>
@@ -270,7 +270,7 @@ import {
 							<div class="bg-slate-700 px-6 py-4 border-b border-slate-600">
 								<div class="text-slate-300 text-base font-medium">basics-example.json</div>
 							</div>
-							<pre class="p-4 sm:p-8 overflow-x-auto bg-slate-800 text-sm sm:text-base leading-relaxed text-slate-200 mono whitespace-pre-wrap break-all"><code class="break-all whitespace-pre-wrap"><span class="token-punctuation">{</span>
+							<pre class="p-4 sm:p-8 xl:p-10 overflow-x-auto bg-slate-800 text-xs sm:text-sm xl:text-base leading-relaxed text-slate-200 mono whitespace-pre-wrap break-words overflow-wrap-anywhere"><code class="break-words whitespace-pre-wrap overflow-wrap-anywhere"><span class="token-punctuation">{</span>
   <span class="token-property">"basics"</span><span class="token-punctuation">:</span> <span class="token-punctuation">{</span>
     <span class="token-property">"name"</span><span class="token-punctuation">:</span> <span class="token-string">"John Doe"</span><span class="token-punctuation">,</span>
     <span class="token-property">"label"</span><span class="token-punctuation">:</span> <span class="token-string">"Senior Full Stack Developer"</span><span class="token-punctuation">,</span>
@@ -407,7 +407,7 @@ import {
 
 		<!-- Installation -->
 		<section class="py-32" id="installation">
-			<div class="max-w-6xl mx-auto px-6">
+			<div class="max-w-6xl 2xl:max-w-screen-xl mx-auto px-6 lg:px-8 2xl:px-12">
 				<div class="text-center mb-16">
 					<h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">Get Started in Minutes</h2>
 					<p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">Install DevFolio JSON Schema and start building type-safe portfolios immediately</p>
@@ -415,12 +415,12 @@ import {
 				<div class="grid md:grid-cols-2 xl:grid-cols-3 gap-12 max-w-5xl mx-auto">
 					<div class="flex flex-col md:flex-row gap-6 items-start min-w-0 w-full overflow-hidden">
 						<div class="bg-purple-600 text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold flex-shrink-0">
-							<Download size={20} />
+							<Download size={20} aria-label="Download icon for package installation" />
 						</div>
 						<div class="step-content min-w-0 w-full overflow-hidden">
 							<h3 class="text-lg md:text-xl lg:text-2xl font-bold text-gray-900 mb-4 break-words">Install the Package</h3>
 							<div class="bg-slate-800 rounded-2xl overflow-hidden shadow-lg mt-4 min-w-0">
-								<pre class="p-3 sm:p-6 overflow-x-auto bg-slate-800 text-sm sm:text-base leading-relaxed text-slate-200 mono whitespace-pre-wrap break-all min-w-0"><code class="break-all whitespace-pre-wrap"><span class="token-comment"># npm</span>
+								<pre class="p-3 sm:p-6 xl:p-8 overflow-x-auto bg-slate-800 text-xs sm:text-sm xl:text-base leading-relaxed text-slate-200 mono whitespace-pre-wrap break-words overflow-wrap-anywhere min-w-0"><code class="break-words whitespace-pre-wrap overflow-wrap-anywhere"><span class="token-comment"># npm</span>
 <span class="token-function">npm install</span> devfolio-json-schema
 
 <span class="token-comment"># yarn</span>
@@ -433,12 +433,12 @@ import {
 					</div>
 					<div class="flex flex-col md:flex-row gap-6 items-start min-w-0 w-full overflow-hidden">
 						<div class="bg-purple-600 text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold flex-shrink-0">
-							<Code size={20} />
+							<Code size={20} aria-label="Code icon for import and use step" />
 						</div>
 						<div class="step-content min-w-0 w-full overflow-hidden">
 							<h3 class="text-lg md:text-xl lg:text-2xl font-bold text-gray-900 mb-4 break-words">Import and Use</h3>
 							<div class="bg-slate-800 rounded-2xl overflow-hidden shadow-lg mt-4 min-w-0">
-								<pre class="p-3 sm:p-6 overflow-x-auto bg-slate-800 text-sm sm:text-base leading-relaxed text-slate-200 mono whitespace-pre-wrap break-all min-w-0"><code class="break-all whitespace-pre-wrap"><span class="token-import">import</span> <span class="token-punctuation">{</span> <span class="token-variable">DevFolioSchema</span> <span class="token-punctuation">}</span> <span class="token-import">from</span> <span class="token-string">'devfolio-json-schema'</span><span class="token-punctuation">;</span>
+								<pre class="p-3 sm:p-6 xl:p-8 overflow-x-auto bg-slate-800 text-xs sm:text-sm xl:text-base leading-relaxed text-slate-200 mono whitespace-pre-wrap break-words overflow-wrap-anywhere min-w-0"><code class="break-words whitespace-pre-wrap overflow-wrap-anywhere"><span class="token-import">import</span> <span class="token-punctuation">{</span> <span class="token-variable">DevFolioSchema</span> <span class="token-punctuation">}</span> <span class="token-import">from</span> <span class="token-string">'devfolio-json-schema'</span><span class="token-punctuation">;</span>
 
 <span class="token-comment">// Validate your portfolio</span>
 <span class="token-keyword">const</span> <span class="token-variable">result</span> <span class="token-operator">=</span> <span class="token-function">DevFolioSchema</span><span class="token-punctuation">.</span><span class="token-function">safeParse</span><span class="token-punctuation">(</span><span class="token-variable">portfolio</span><span class="token-punctuation">)</span><span class="token-punctuation">;</span></code></pre>
@@ -447,12 +447,12 @@ import {
 					</div>
 					<div class="flex flex-col md:flex-row gap-6 items-start min-w-0 w-full overflow-hidden">
 						<div class="bg-purple-600 text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold flex-shrink-0">
-							<Play size={20} />
+							<Play size={20} aria-label="Play icon for build your portfolio step" />
 						</div>
 						<div class="step-content min-w-0 w-full overflow-hidden">
 							<h3 class="text-lg md:text-xl lg:text-2xl font-bold text-gray-900 mb-4 break-words">Build Your Portfolio</h3>
 							<div class="bg-slate-800 rounded-2xl overflow-hidden shadow-lg mt-4 min-w-0">
-								<pre class="p-3 sm:p-6 overflow-x-auto bg-slate-800 text-sm sm:text-base leading-relaxed text-slate-200 mono whitespace-pre-wrap break-all min-w-0"><code class="break-all whitespace-pre-wrap"><span class="token-comment">// Full TypeScript support</span>
+								<pre class="p-3 sm:p-6 xl:p-8 overflow-x-auto bg-slate-800 text-xs sm:text-sm xl:text-base leading-relaxed text-slate-200 mono whitespace-pre-wrap break-words overflow-wrap-anywhere min-w-0"><code class="break-words whitespace-pre-wrap overflow-wrap-anywhere"><span class="token-comment">// Full TypeScript support</span>
 <span class="token-keyword">const</span> <span class="token-variable">portfolio</span><span class="token-punctuation">:</span> <span class="token-variable">DevFolioType</span> <span class="token-operator">=</span> <span class="token-punctuation">{</span>
   <span class="token-property">basics</span><span class="token-punctuation">:</span> <span class="token-punctuation">{</span> <span class="token-operator">...</span> <span class="token-punctuation">}</span><span class="token-punctuation">,</span>
   <span class="token-property">skills</span><span class="token-punctuation">:</span> <span class="token-punctuation">[</span> <span class="token-operator">...</span> <span class="token-punctuation">]</span><span class="token-punctuation">,</span>
@@ -467,7 +467,7 @@ import {
 
 		<!-- Comparison -->
 		<section class="py-32 bg-slate-50">
-			<div class="max-w-6xl mx-auto px-6">
+			<div class="max-w-6xl 2xl:max-w-screen-xl mx-auto px-6 lg:px-8 2xl:px-12">
 				<div class="text-center mb-16">
 					<h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">How We Compare</h2>
 					<p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">See why developers choose DevFolio JSON Schema over other solutions</p>
@@ -533,16 +533,16 @@ import {
 
 		<!-- CTA Section -->
 		<section class="py-32 hero-bg text-white text-center">
-			<div class="max-w-4xl mx-auto px-6">
+			<div class="max-w-4xl 2xl:max-w-screen-lg mx-auto px-6 lg:px-8 2xl:px-12">
 				<h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-6">Ready to Build Better Portfolios?</h2>
 				<p class="text-lg md:text-xl mb-10 opacity-90">Join developers who are already using DevFolio JSON Schema to create standardized, type-safe portfolios.</p>
 				<div class="flex flex-col sm:flex-row gap-4 justify-center">
 					<a href="https://github.com/AungMyoKyaw/devfolio-json-schema" class="bg-white text-purple-600 font-semibold px-8 py-4 rounded-lg inline-flex items-center gap-3 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg text-lg min-h-[48px] justify-center" target="_blank">
-						<Github size={20} />
+						<Github size={20} aria-label="GitHub icon" />
 						Get Started on GitHub
 					</a>
 					<a href="https://www.npmjs.com/package/devfolio-json-schema" class="bg-white/10 text-white font-semibold px-8 py-4 rounded-lg inline-flex items-center gap-3 border-2 border-white/30 backdrop-blur-sm transition-all duration-300 hover:bg-white/20 hover:border-white/50 text-lg min-h-[48px] justify-center" target="_blank">
-						<Package size={20} />
+						<Package size={20} aria-label="NPM package icon" />
 						View on NPM
 					</a>
 				</div>
@@ -551,22 +551,22 @@ import {
 
 		<!-- Footer -->
 		<footer class="py-16 bg-gray-900 text-gray-300">
-			<div class="max-w-6xl mx-auto px-6">
+			<div class="max-w-6xl 2xl:max-w-screen-xl mx-auto px-6 lg:px-8 2xl:px-12">
 				<div class="grid md:grid-cols-2 gap-8 items-center">
 					<div class="footer-left">
 						<h3 class="text-2xl font-bold text-white mb-4">DevFolio JSON Schema</h3>
 						<p class="mb-6 opacity-80">The complete TypeScript-first JSON schema for professional developer portfolios.</p>
 						<div class="flex gap-6">
 							<a href="https://github.com/AungMyoKyaw/devfolio-json-schema" target="_blank" class="text-gray-400 hover:text-purple-400 transition-colors duration-300 px-3 py-2 min-h-[44px] flex items-center gap-2 text-base">
-								<Github size={16} />
+								<Github size={16} aria-label="GitHub icon" />
 								GitHub
 							</a>
 							<a href="https://www.npmjs.com/package/devfolio-json-schema" target="_blank" class="text-gray-400 hover:text-purple-400 transition-colors duration-300 px-3 py-2 min-h-[44px] flex items-center gap-2 text-base">
-								<Package size={16} />
+								<Package size={16} aria-label="NPM package icon" />
 								NPM
 							</a>
 							<a href="https://github.com/AungMyoKyaw/devfolio-json-schema/blob/main/LICENSE" target="_blank" class="text-gray-400 hover:text-purple-400 transition-colors duration-300 px-3 py-2 min-h-[44px] flex items-center gap-2 text-base">
-								<FileText size={16} />
+								<FileText size={16} aria-label="License file icon" />
 								License
 							</a>
 						</div>
@@ -574,7 +574,7 @@ import {
 					<div class="footer-right text-center md:text-right">
 						<p class="mb-2 opacity-80 flex items-center justify-center md:justify-end gap-2">
 							Made with
-							<Heart size={16} class="text-red-400" />
+							<Heart size={16} class="text-red-400" aria-label="Heart icon representing love" />
 							by <a href="https://github.com/AungMyoKyaw" target="_blank" class="text-purple-400 hover:underline inline-block min-h-[44px] py-2 px-1">Aung Myo Kyaw</a>
 						</p>
 						<p class="opacity-80">Licensed under MIT • Version 1.0.0-beta.0</p>
