@@ -8,6 +8,12 @@ A comprehensive TypeScript-first JSON schema for professional developer portfoli
 
 The interactive product page showcases all features, provides code examples, and includes comprehensive documentation. Built with Astro for optimal performance.
 
+## 📖 Full Schema Specification
+
+**[Read the full DevFolio JSON Schema Specification →](./SPEC.md)**
+
+The `SPEC.md` file contains the complete, up-to-date schema reference, field descriptions, and all supported sections.
+
 ## 🚀 Features
 
 - **TypeScript-First**: Built with Zod for full type safety and inference
