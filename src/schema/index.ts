@@ -29,7 +29,9 @@ export const DevFolioSchema = z.object({
   /** Schema version for future compatibility */
   $schema: z
     .string()
-    .default("https://github.com/AungMyoKyaw/devfolio-json-schema/v1.0.0"),
+    .default(
+      "https://raw.githubusercontent.com/AungMyoKyaw/devfolio-json-schema/refs/heads/master/schema.json"
+    ),
 
   /** Basic personal information */
   basics: BasicsSchema.optional(),

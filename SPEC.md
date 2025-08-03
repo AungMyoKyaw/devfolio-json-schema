@@ -22,7 +22,6 @@ The DevFolio schema is a comprehensive, TypeScript-first JSON schema for profess
 
 The DevFolio JSON document is a single JSON object with the following top-level properties.
 
-
 ### `$schema`
 
 The canonical URL for the DevFolio JSON Schema.
@@ -444,7 +443,7 @@ Here is a complete example of a `devfolio.json` file, showcasing many of the ava
 
 ```json
 {
-  "$schema": "https://github.com/AungMyoKyaw/devfolio-json-schema/v1.0.0",
+  "$schema": "https://raw.githubusercontent.com/AungMyoKyaw/devfolio-json-schema/refs/heads/master/schema.json",
   "basics": {
     "name": "Aung Myo Kyaw",
     "label": "Senior Full-Stack Developer & Cloud Architect",
@@ -597,7 +596,7 @@ The most basic valid DevFolio only requires a name:
 
 ```json
 {
-  "$schema": "https://github.com/AungMyoKyaw/devfolio-json-schema/v1.0.0",
+  "$schema": "https://raw.githubusercontent.com/AungMyoKyaw/devfolio-json-schema/refs/heads/master/schema.json",
   "basics": {
     "name": "John Doe"
   }

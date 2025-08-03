@@ -4,7 +4,8 @@ import type { DevFolio } from "../schema";
  * Comprehensive sample DevFolio data demonstrating all schema features
  */
 export const sampleDevFolio: DevFolio = {
-  $schema: "https://github.com/AungMyoKyaw/devfolio-json-schema/v1.0.0",
+  $schema:
+    "https://raw.githubusercontent.com/AungMyoKyaw/devfolio-json-schema/refs/heads/master/schema.json",
 
   basics: {
     name: "Aung Myo Kyaw",

@@ -70,7 +70,7 @@ console.log(
 console.log("\nTest 8: Schema URL test...");
 const hasCorrectSchema =
   sampleDevFolio.$schema ===
-  "https://github.com/AungMyoKyaw/devfolio-json-schema/v1.0.0";
+  "https://raw.githubusercontent.com/AungMyoKyaw/devfolio-json-schema/refs/heads/master/schema.json";
 console.log(
   hasCorrectSchema ? "✅ PASSED" : "❌ FAILED",
   "- Schema URL validation"

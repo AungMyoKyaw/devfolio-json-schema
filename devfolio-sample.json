@@ -1,5 +1,5 @@
 {
-  "$schema": "https://github.com/AungMyoKyaw/devfolio-json-schema/v1.0.0",
+  "$schema": "https://raw.githubusercontent.com/AungMyoKyaw/devfolio-json-schema/refs/heads/master/schema.json",
   "basics": {
     "name": "Aung Myo Kyaw",
     "label": "Senior Full-Stack Developer & Cloud Architect",

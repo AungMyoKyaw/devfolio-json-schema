@@ -6,7 +6,7 @@
       "properties": {
         "$schema": {
           "type": "string",
-          "default": "https://github.com/AungMyoKyaw/devfolio-json-schema/v1.0.0"
+          "default": "https://raw.githubusercontent.com/AungMyoKyaw/devfolio-json-schema/refs/heads/master/schema.json"
         },
         "basics": {
           "type": "object",
@@ -78,17 +78,12 @@
                     "type": "string"
                   }
                 },
-                "required": [
-                  "network",
-                  "url"
-                ],
+                "required": ["network", "url"],
                 "additionalProperties": false
               }
             }
           },
-          "required": [
-            "name"
-          ],
+          "required": ["name"],
           "additionalProperties": false
         },
         "work": {
@@ -151,11 +146,7 @@
                 "type": "string"
               }
             },
-            "required": [
-              "name",
-              "position",
-              "startDate"
-            ],
+            "required": ["name", "position", "startDate"],
             "additionalProperties": false
           }
         },
@@ -214,12 +205,7 @@
               },
               "status": {
                 "type": "string",
-                "enum": [
-                  "completed",
-                  "in-progress",
-                  "on-hold",
-                  "cancelled"
-                ]
+                "enum": ["completed", "in-progress", "on-hold", "cancelled"]
               },
               "technologies": {
                 "type": "array",
@@ -238,9 +224,7 @@
                 "type": "string"
               }
             },
-            "required": [
-              "name"
-            ],
+            "required": ["name"],
             "additionalProperties": false
           }
         },
@@ -295,9 +279,7 @@
                 "type": "string"
               }
             },
-            "required": [
-              "institution"
-            ],
+            "required": ["institution"],
             "additionalProperties": false
           }
         },
@@ -311,19 +293,11 @@
               },
               "type": {
                 "type": "string",
-                "enum": [
-                  "Course",
-                  "Bundle",
-                  "Specialization"
-                ]
+                "enum": ["Course", "Bundle", "Specialization"]
               },
               "status": {
                 "type": "string",
-                "enum": [
-                  "Completed",
-                  "In Progress",
-                  "Not Started"
-                ]
+                "enum": ["Completed", "In Progress", "Not Started"]
               },
               "certificateLink": {
                 "type": "string",
@@ -366,9 +340,7 @@
                       }
                     }
                   },
-                  "required": [
-                    "title"
-                  ],
+                  "required": ["title"],
                   "additionalProperties": false
                 }
               },
@@ -389,11 +361,7 @@
                 }
               }
             },
-            "required": [
-              "courseTitle",
-              "type",
-              "status"
-            ],
+            "required": ["courseTitle", "type", "status"],
             "additionalProperties": false
           }
         },
@@ -447,10 +415,7 @@
                 ]
               }
             },
-            "required": [
-              "name",
-              "issuer"
-            ],
+            "required": ["name", "issuer"],
             "additionalProperties": false
           }
         },
@@ -499,9 +464,7 @@
                 "format": "uri"
               }
             },
-            "required": [
-              "title"
-            ],
+            "required": ["title"],
             "additionalProperties": false
           }
         },
@@ -539,9 +502,7 @@
                 "format": "uri"
               }
             },
-            "required": [
-              "title"
-            ],
+            "required": ["title"],
             "additionalProperties": false
           }
         },
@@ -614,9 +575,7 @@
                 "maximum": 10
               }
             },
-            "required": [
-              "name"
-            ],
+            "required": ["name"],
             "additionalProperties": false
           }
         },
@@ -676,9 +635,7 @@
                       "format": "uri"
                     }
                   },
-                  "required": [
-                    "name"
-                  ],
+                  "required": ["name"],
                   "additionalProperties": false
                 }
               },
@@ -686,9 +643,7 @@
                 "type": "boolean"
               }
             },
-            "required": [
-              "language"
-            ],
+            "required": ["language"],
             "additionalProperties": false
           }
         },
@@ -728,20 +683,13 @@
               },
               "level": {
                 "type": "string",
-                "enum": [
-                  "casual",
-                  "hobby",
-                  "passionate",
-                  "professional"
-                ]
+                "enum": ["casual", "hobby", "passionate", "professional"]
               },
               "description": {
                 "type": "string"
               }
             },
-            "required": [
-              "name"
-            ],
+            "required": ["name"],
             "additionalProperties": false
           }
         },
@@ -781,9 +729,7 @@
                 "type": "string"
               }
             },
-            "required": [
-              "organization"
-            ],
+            "required": ["organization"],
             "additionalProperties": false
           }
         },
@@ -854,9 +800,7 @@
                 "type": "string"
               }
             },
-            "required": [
-              "name"
-            ],
+            "required": ["name"],
             "additionalProperties": false
           }
         },
@@ -926,9 +870,7 @@
                 }
               }
             },
-            "required": [
-              "title"
-            ],
+            "required": ["title"],
             "additionalProperties": false
           }
         },
@@ -976,9 +918,7 @@
                 }
               }
             },
-            "required": [
-              "title"
-            ],
+            "required": ["title"],
             "additionalProperties": false
           }
         },
@@ -1019,20 +959,13 @@
               },
               "status": {
                 "type": "string",
-                "enum": [
-                  "pending",
-                  "granted",
-                  "expired",
-                  "abandoned"
-                ]
+                "enum": ["pending", "granted", "expired", "abandoned"]
               },
               "applicationNumber": {
                 "type": "string"
               }
             },
-            "required": [
-              "title"
-            ],
+            "required": ["title"],
             "additionalProperties": false
           }
         },
@@ -1092,9 +1025,7 @@
                 "format": "uri"
               }
             },
-            "required": [
-              "name"
-            ],
+            "required": ["name"],
             "additionalProperties": false
           }
         },
@@ -1113,11 +1044,7 @@
             },
             "visibility": {
               "type": "string",
-              "enum": [
-                "public",
-                "private",
-                "unlisted"
-              ]
+              "enum": ["public", "private", "unlisted"]
             },
             "custom": {
               "type": "object",

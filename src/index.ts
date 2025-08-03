@@ -16,4 +16,4 @@ export const VERSION = "1.0.0";
 
 // Schema URL
 export const SCHEMA_URL =
-  "https://github.com/AungMyoKyaw/devfolio-json-schema/v1.0.0";
+  "https://raw.githubusercontent.com/AungMyoKyaw/devfolio-json-schema/refs/heads/master/schema.json";

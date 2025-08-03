@@ -206,7 +206,6 @@ Based on real-world MOOC data structure, supporting:
 
 See `devfolio-sample.json` for a comprehensive example showcasing all schema features.
 
-
 ### Minimal Example
 
 ```json

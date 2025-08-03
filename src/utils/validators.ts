@@ -88,7 +88,8 @@ export function isValidDevFolio(data: unknown): data is DevFolio {
  */
 export function createMinimalDevFolio(name: string): DevFolio {
   return {
-    $schema: "https://github.com/AungMyoKyaw/devfolio-json-schema/v1.0.0",
+    $schema:
+      "https://raw.githubusercontent.com/AungMyoKyaw/devfolio-json-schema/refs/heads/master/schema.json",
     basics: {
       name
     }
