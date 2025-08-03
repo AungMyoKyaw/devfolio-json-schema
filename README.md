@@ -206,11 +206,12 @@ Based on real-world MOOC data structure, supporting:
 
 See `devfolio-sample.json` for a comprehensive example showcasing all schema features.
 
+
 ### Minimal Example
 
 ```json
 {
-  "$schema": "https://github.com/AungMyoKyaw/devfolio-json-schema/v1.0.0",
+  "$schema": "https://raw.githubusercontent.com/AungMyoKyaw/devfolio-json-schema/refs/heads/master/schema.json",
   "basics": {
     "name": "John Doe"
   }
