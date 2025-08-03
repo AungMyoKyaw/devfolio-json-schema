@@ -1,0 +1,1134 @@
+{
+  "$ref": "#/definitions/DevFolio",
+  "definitions": {
+    "DevFolio": {
+      "type": "object",
+      "properties": {
+        "$schema": {
+          "type": "string",
+          "default": "https://github.com/AungMyoKyaw/devfolio-json-schema/v1.0.0"
+        },
+        "basics": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "minLength": 1
+            },
+            "label": {
+              "type": "string"
+            },
+            "image": {
+              "type": "string",
+              "format": "uri"
+            },
+            "email": {
+              "type": "string",
+              "format": "email"
+            },
+            "phone": {
+              "type": "string"
+            },
+            "url": {
+              "type": "string",
+              "format": "uri"
+            },
+            "summary": {
+              "type": "string"
+            },
+            "location": {
+              "type": "object",
+              "properties": {
+                "address": {
+                  "type": "string"
+                },
+                "postalCode": {
+                  "type": "string"
+                },
+                "city": {
+                  "type": "string"
+                },
+                "countryCode": {
+                  "type": "string",
+                  "minLength": 2,
+                  "maxLength": 2
+                },
+                "region": {
+                  "type": "string"
+                }
+              },
+              "additionalProperties": false
+            },
+            "profiles": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "network": {
+                    "type": "string"
+                  },
+                  "username": {
+                    "type": "string"
+                  },
+                  "url": {
+                    "type": "string",
+                    "format": "uri"
+                  },
+                  "id": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "network",
+                  "url"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": [
+            "name"
+          ],
+          "additionalProperties": false
+        },
+        "work": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "position": {
+                "type": "string"
+              },
+              "url": {
+                "type": "string",
+                "format": "uri"
+              },
+              "startDate": {
+                "type": "string",
+                "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+              },
+              "endDate": {
+                "type": "string",
+                "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+              },
+              "summary": {
+                "type": "string"
+              },
+              "highlights": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "type": {
+                "type": "string",
+                "enum": [
+                  "full-time",
+                  "part-time",
+                  "contract",
+                  "freelance",
+                  "internship",
+                  "volunteer"
+                ]
+              },
+              "remote": {
+                "type": "boolean"
+              },
+              "technologies": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "teamSize": {
+                "type": "number",
+                "minimum": 1
+              },
+              "location": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "name",
+              "position",
+              "startDate"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "projects": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "highlights": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "keywords": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "startDate": {
+                "type": "string",
+                "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+              },
+              "endDate": {
+                "type": "string",
+                "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+              },
+              "url": {
+                "type": "string",
+                "format": "uri"
+              },
+              "repository": {
+                "type": "string",
+                "format": "uri"
+              },
+              "demo": {
+                "type": "string",
+                "format": "uri"
+              },
+              "type": {
+                "type": "string",
+                "enum": [
+                  "personal",
+                  "professional",
+                  "open-source",
+                  "academic",
+                  "freelance"
+                ]
+              },
+              "status": {
+                "type": "string",
+                "enum": [
+                  "completed",
+                  "in-progress",
+                  "on-hold",
+                  "cancelled"
+                ]
+              },
+              "technologies": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "role": {
+                "type": "string"
+              },
+              "teamSize": {
+                "type": "number",
+                "minimum": 1
+              },
+              "organization": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "name"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "education": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "institution": {
+                "type": "string"
+              },
+              "url": {
+                "type": "string",
+                "format": "uri"
+              },
+              "area": {
+                "type": "string"
+              },
+              "studyType": {
+                "type": "string"
+              },
+              "startDate": {
+                "type": "string",
+                "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+              },
+              "endDate": {
+                "type": "string",
+                "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+              },
+              "score": {
+                "type": "string"
+              },
+              "courses": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "honors": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "activities": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "location": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "institution"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "moocs": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "courseTitle": {
+                "type": "string"
+              },
+              "type": {
+                "type": "string",
+                "enum": [
+                  "Course",
+                  "Bundle",
+                  "Specialization"
+                ]
+              },
+              "status": {
+                "type": "string",
+                "enum": [
+                  "Completed",
+                  "In Progress",
+                  "Not Started"
+                ]
+              },
+              "certificateLink": {
+                "type": "string",
+                "format": "uri"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "startDate": {
+                "type": "string",
+                "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+              },
+              "completionDate": {
+                "type": "string",
+                "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+              },
+              "courses": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "title": {
+                      "type": "string"
+                    },
+                    "certificateLink": {
+                      "type": "string",
+                      "format": "uri"
+                    },
+                    "completionDate": {
+                      "type": "string",
+                      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+                    },
+                    "description": {
+                      "type": "string"
+                    },
+                    "skills": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "required": [
+                    "title"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "skills": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "duration": {
+                "type": "number",
+                "minimum": 0
+              },
+              "instructors": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "courseTitle",
+              "type",
+              "status"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "certifications": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "issuer": {
+                "type": "string"
+              },
+              "date": {
+                "type": "string",
+                "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+              },
+              "expirationDate": {
+                "type": "string",
+                "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+              },
+              "url": {
+                "type": "string",
+                "format": "uri"
+              },
+              "badgeUrl": {
+                "type": "string",
+                "format": "uri"
+              },
+              "certificationId": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "skills": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "level": {
+                "type": "string",
+                "enum": [
+                  "foundation",
+                  "associate",
+                  "professional",
+                  "expert",
+                  "master"
+                ]
+              }
+            },
+            "required": [
+              "name",
+              "issuer"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "awards": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string"
+              },
+              "date": {
+                "type": "string",
+                "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+              },
+              "awarder": {
+                "type": "string"
+              },
+              "summary": {
+                "type": "string"
+              },
+              "category": {
+                "type": "string",
+                "enum": [
+                  "academic",
+                  "professional",
+                  "community",
+                  "technical",
+                  "leadership",
+                  "innovation",
+                  "other"
+                ]
+              },
+              "level": {
+                "type": "string",
+                "enum": [
+                  "international",
+                  "national",
+                  "regional",
+                  "local",
+                  "organizational"
+                ]
+              },
+              "url": {
+                "type": "string",
+                "format": "uri"
+              }
+            },
+            "required": [
+              "title"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "achievements": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string"
+              },
+              "date": {
+                "type": "string",
+                "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+              },
+              "issuer": {
+                "type": "string"
+              },
+              "summary": {
+                "type": "string"
+              },
+              "category": {
+                "type": "string",
+                "enum": [
+                  "technical",
+                  "leadership",
+                  "innovation",
+                  "performance",
+                  "recognition",
+                  "other"
+                ]
+              },
+              "url": {
+                "type": "string",
+                "format": "uri"
+              }
+            },
+            "required": [
+              "title"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "skills": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "level": {
+                "type": "string",
+                "enum": [
+                  "beginner",
+                  "novice",
+                  "intermediate",
+                  "advanced",
+                  "expert",
+                  "master"
+                ]
+              },
+              "category": {
+                "type": "string",
+                "enum": [
+                  "programming-languages",
+                  "frameworks",
+                  "libraries",
+                  "databases",
+                  "tools",
+                  "platforms",
+                  "methodologies",
+                  "soft-skills",
+                  "design",
+                  "testing",
+                  "devops",
+                  "mobile",
+                  "web",
+                  "data-science",
+                  "machine-learning",
+                  "blockchain",
+                  "security",
+                  "cloud",
+                  "other"
+                ]
+              },
+              "yearsOfExperience": {
+                "type": "number",
+                "minimum": 0
+              },
+              "keywords": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "lastUsed": {
+                "type": "string",
+                "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+              },
+              "certifications": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "rating": {
+                "type": "number",
+                "minimum": 1,
+                "maximum": 10
+              }
+            },
+            "required": [
+              "name"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "languages": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "language": {
+                "type": "string"
+              },
+              "fluency": {
+                "type": "string",
+                "enum": [
+                  "elementary",
+                  "limited-working",
+                  "professional-working",
+                  "full-professional",
+                  "native-bilingual",
+                  "A1",
+                  "A2",
+                  "B1",
+                  "B2",
+                  "C1",
+                  "C2"
+                ]
+              },
+              "speaking": {
+                "$ref": "#/definitions/DevFolio/properties/languages/items/properties/fluency"
+              },
+              "writing": {
+                "$ref": "#/definitions/DevFolio/properties/languages/items/properties/fluency"
+              },
+              "reading": {
+                "$ref": "#/definitions/DevFolio/properties/languages/items/properties/fluency"
+              },
+              "listening": {
+                "$ref": "#/definitions/DevFolio/properties/languages/items/properties/fluency"
+              },
+              "certifications": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "score": {
+                      "type": "string"
+                    },
+                    "date": {
+                      "type": "string",
+                      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+                    },
+                    "url": {
+                      "type": "string",
+                      "format": "uri"
+                    }
+                  },
+                  "required": [
+                    "name"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "native": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "language"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "interests": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "keywords": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "category": {
+                "type": "string",
+                "enum": [
+                  "technology",
+                  "sports",
+                  "arts",
+                  "music",
+                  "travel",
+                  "reading",
+                  "gaming",
+                  "photography",
+                  "cooking",
+                  "fitness",
+                  "volunteering",
+                  "education",
+                  "science",
+                  "business",
+                  "other"
+                ]
+              },
+              "level": {
+                "type": "string",
+                "enum": [
+                  "casual",
+                  "hobby",
+                  "passionate",
+                  "professional"
+                ]
+              },
+              "description": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "name"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "volunteer": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "organization": {
+                "type": "string"
+              },
+              "position": {
+                "type": "string"
+              },
+              "url": {
+                "type": "string",
+                "format": "uri"
+              },
+              "startDate": {
+                "type": "string",
+                "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+              },
+              "endDate": {
+                "type": "string",
+                "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+              },
+              "summary": {
+                "type": "string"
+              },
+              "highlights": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "cause": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "organization"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "publications": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "publisher": {
+                "type": "string"
+              },
+              "releaseDate": {
+                "type": "string",
+                "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+              },
+              "url": {
+                "type": "string",
+                "format": "uri"
+              },
+              "doi": {
+                "type": "string"
+              },
+              "summary": {
+                "type": "string"
+              },
+              "type": {
+                "type": "string",
+                "enum": [
+                  "journal-article",
+                  "conference-paper",
+                  "book",
+                  "book-chapter",
+                  "thesis",
+                  "patent",
+                  "blog-post",
+                  "white-paper",
+                  "case-study",
+                  "technical-report",
+                  "other"
+                ]
+              },
+              "authors": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "keywords": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "citations": {
+                "type": "number",
+                "minimum": 0
+              },
+              "venue": {
+                "type": "string"
+              },
+              "volume": {
+                "type": "string"
+              },
+              "pages": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "name"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "speaking": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string"
+              },
+              "event": {
+                "type": "string"
+              },
+              "organizer": {
+                "type": "string"
+              },
+              "date": {
+                "type": "string",
+                "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+              },
+              "location": {
+                "type": "string"
+              },
+              "url": {
+                "type": "string",
+                "format": "uri"
+              },
+              "presentationUrl": {
+                "type": "string",
+                "format": "uri"
+              },
+              "slidesUrl": {
+                "type": "string",
+                "format": "uri"
+              },
+              "videoUrl": {
+                "type": "string",
+                "format": "uri"
+              },
+              "description": {
+                "type": "string"
+              },
+              "audienceSize": {
+                "type": "number",
+                "minimum": 0
+              },
+              "type": {
+                "type": "string",
+                "enum": [
+                  "keynote",
+                  "conference-talk",
+                  "workshop",
+                  "panel",
+                  "webinar",
+                  "podcast",
+                  "interview",
+                  "meetup",
+                  "internal-presentation",
+                  "other"
+                ]
+              },
+              "topics": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "title"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "media": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string"
+              },
+              "outlet": {
+                "type": "string"
+              },
+              "date": {
+                "type": "string",
+                "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+              },
+              "url": {
+                "type": "string",
+                "format": "uri"
+              },
+              "description": {
+                "type": "string"
+              },
+              "type": {
+                "type": "string",
+                "enum": [
+                  "interview",
+                  "article",
+                  "podcast",
+                  "video",
+                  "tv-appearance",
+                  "radio",
+                  "quote",
+                  "feature",
+                  "profile",
+                  "other"
+                ]
+              },
+              "topics": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "title"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "patents": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string"
+              },
+              "patentNumber": {
+                "type": "string"
+              },
+              "filingDate": {
+                "type": "string",
+                "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+              },
+              "grantDate": {
+                "type": "string",
+                "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+              },
+              "office": {
+                "type": "string"
+              },
+              "url": {
+                "type": "string",
+                "format": "uri"
+              },
+              "summary": {
+                "type": "string"
+              },
+              "inventors": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "status": {
+                "type": "string",
+                "enum": [
+                  "pending",
+                  "granted",
+                  "expired",
+                  "abandoned"
+                ]
+              },
+              "applicationNumber": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "title"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "references": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "reference": {
+                "type": "string"
+              },
+              "position": {
+                "type": "string"
+              },
+              "company": {
+                "type": "string"
+              },
+              "relationship": {
+                "type": "string",
+                "enum": [
+                  "manager",
+                  "colleague",
+                  "direct-report",
+                  "client",
+                  "mentor",
+                  "professor",
+                  "peer",
+                  "other"
+                ]
+              },
+              "contact": {
+                "type": "object",
+                "properties": {
+                  "email": {
+                    "type": "string",
+                    "format": "email"
+                  },
+                  "phone": {
+                    "type": "string"
+                  },
+                  "linkedin": {
+                    "type": "string",
+                    "format": "uri"
+                  }
+                },
+                "additionalProperties": false
+              },
+              "date": {
+                "type": "string",
+                "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+              },
+              "url": {
+                "type": "string",
+                "format": "uri"
+              }
+            },
+            "required": [
+              "name"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "meta": {
+          "type": "object",
+          "properties": {
+            "lastModified": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "version": {
+              "type": "string"
+            },
+            "theme": {
+              "type": "string"
+            },
+            "visibility": {
+              "type": "string",
+              "enum": [
+                "public",
+                "private",
+                "unlisted"
+              ]
+            },
+            "custom": {
+              "type": "object",
+              "additionalProperties": {}
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}
